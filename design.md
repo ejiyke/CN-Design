@@ -43,16 +43,16 @@ Used for special alerts, pending status indicators, star ratings, and promotiona
 
 | Token Name | Hex Code | RGB | Typical Application |
 | :--- | :--- | :--- | :--- |
-| `cn-yellow-light` | `#fffbee` | `rgb(255, 251, 238)` | Warning banner background, pending badge fill |
-| `cn-yellow-light-hover` | `#fef7db` | `rgb(254, 247, 219)` | Hover state for warning surfaces |
-| `cn-yellow-light-active` | `#fcedbb` | `rgb(252, 237, 187)` | Active state for warning surfaces |
-| `cn-yellow-normal` | `#e28a2a` | `rgb(226, 138, 42)` | Warning text, star rating fill, accent tags |
-| `cn-yellow-normal-hover`| `#d07718` | `rgb(208, 119, 24)` | Hover on amber interactive elements |
-| `cn-yellow-normal-active`| `#b96710` | `rgb(185, 103, 16)` | Active state on amber interactive elements |
-| `cn-yellow-dark` | `#ab6216` | `rgb(171, 98, 22)` | High contrast amber text |
-| `cn-yellow-dark-hover` | `#8f4f0e` | `rgb(143, 79, 14)` | Hover state on dark amber elements |
-| `cn-yellow-dark-active` | `#743e09` | `rgb(116, 62, 9)` | Active state on dark amber elements |
-| `cn-yellow-darker` | `#592e03` | `rgb(89, 46, 3)` | Maximum contrast amber text |
+| `cn-yellow-light` | `#fcf4ed` | `rgb(252, 244, 237)` | Warning banner background, pending badge fill |
+| `cn-yellow-light-hover` | `#fbefe3` | `rgb(251, 239, 227)` | Hover state for warning surfaces |
+| `cn-yellow-light-active` | `#f7ddc6` | `rgb(247, 221, 198)` | Active state for warning surfaces |
+| `cn-yellow-normal` | `#e49146` | `rgb(228, 145, 70)` | Warning text, star rating fill, accent tags |
+| `cn-yellow-normal-hover`| `#cd833f` | `rgb(205, 131, 63)` | Hover on amber interactive elements |
+| `cn-yellow-normal-active`| `#b67438` | `rgb(182, 116, 56)` | Active state on amber interactive elements |
+| `cn-yellow-dark` | `#ab6d35` | `rgb(171, 109, 53)` | High contrast amber text |
+| `cn-yellow-dark-hover` | `#89572a` | `rgb(137, 87, 42)` | Hover state on dark amber elements |
+| `cn-yellow-dark-active` | `#67411f` | `rgb(103, 65, 31)` | Active state on dark amber elements |
+| `cn-yellow-darker` | `#503319` | `rgb(80, 51, 25)` | Maximum contrast amber text |
 
 ### 2.3 CN Blue / Slate (Neutral Foundation & Typography)
 The foundational slate/blue grayscale providing depth, typography contrast, and structural outlines.
@@ -348,16 +348,16 @@ Copy and paste the following CSS variable definitions into your root stylesheet 
   /* ============================================================
      CN YELLOW / AMBER (PROMOTIONAL & WARNING)
      ============================================================ */
-  --cn-yellow-light: #fffbee;
-  --cn-yellow-light-hover: #fef7db;
-  --cn-yellow-light-active: #fcedbb;
-  --cn-yellow-normal: #e28a2a;
-  --cn-yellow-normal-hover: #d07718;
-  --cn-yellow-normal-active: #b96710;
-  --cn-yellow-dark: #ab6216;
-  --cn-yellow-dark-hover: #8f4f0e;
-  --cn-yellow-dark-active: #743e09;
-  --cn-yellow-darker: #592e03;
+  --cn-yellow-light: #fcf4ed;
+  --cn-yellow-light-hover: #fbefe3;
+  --cn-yellow-light-active: #f7ddc6;
+  --cn-yellow-normal: #e49146;
+  --cn-yellow-normal-hover: #cd833f;
+  --cn-yellow-normal-active: #b67438;
+  --cn-yellow-dark: #ab6d35;
+  --cn-yellow-dark-hover: #89572a;
+  --cn-yellow-dark-active: #67411f;
+  --cn-yellow-darker: #503319;
 
   /* ============================================================
      CN BLUE / SLATE (NEUTRALS & TYPOGRAPHY)

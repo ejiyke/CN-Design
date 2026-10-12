@@ -24,16 +24,16 @@
   /* ==========================================================================
      CN YELLOW / AMBER (PROMOTIONAL & ALERT PALETTE)
      ========================================================================== */
-  --cn-yellow-light: #fffbee;
-  --cn-yellow-light-hover: #fef7db;
-  --cn-yellow-light-active: #fcedbb;
-  --cn-yellow-normal: #e28a2a;
-  --cn-yellow-normal-hover: #d07718;
-  --cn-yellow-normal-active: #b96710;
-  --cn-yellow-dark: #ab6216;
-  --cn-yellow-dark-hover: #8f4f0e;
-  --cn-yellow-dark-active: #743e09;
-  --cn-yellow-darker: #592e03;
+  --cn-yellow-light: #fcf4ed;
+  --cn-yellow-light-hover: #fbefe3;
+  --cn-yellow-light-active: #f7ddc6;
+  --cn-yellow-normal: #e49146;
+  --cn-yellow-normal-hover: #cd833f;
+  --cn-yellow-normal-active: #b67438;
+  --cn-yellow-dark: #ab6d35;
+  --cn-yellow-dark-hover: #89572a;
+  --cn-yellow-dark-active: #67411f;
+  --cn-yellow-darker: #503319;
 
   /* ==========================================================================
      CN BLUE / SLATE (NEUTRALS & TYPOGRAPHY FOUNDATIONS)
