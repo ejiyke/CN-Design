@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Nigeria Design System — Material 3 Inspired Portal</title>
+  <meta name="description" content="Official Connect Nigeria (CN) Design System portal inspired by Material Design 3. Enterprise-grade marketplace design system featuring design tokens, components, patterns, and interactive tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP APP BAR / HEADER (M3 STYLE)
+       ======================================================================== -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <a href="#overview" class="brand-logo-badge">
+        <div class="brand-icon-mark">CN</div>
+        <span class="brand-title">Connect Nigeria <span class="brand-sub">DS</span></span>
+      </a>
+      <span class="version-pill">v1.0.0</span>
+    </div>
+
+    <div class="header-actions">
+      <button class="search-trigger" id="search-trigger" aria-label="Search Design System Tokens and Components">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span>Search components & tokens...</span>
+        <span class="search-shortcut">Ctrl K</span>
+      </button>
+
+      <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+        <span id="theme-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </span>
+      </button>
+
+      <a href="https://www.figma.com/design/1GkPo4rYklRXsakNrZv2Ws/CN-Design-System?node-id=33-3759" target="_blank" rel="noopener noreferrer" class="header-link-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M5 7a4 4 0 0 1 7-2.6 4 4 0 0 1 7 2.6v10a4 4 0 0 1-7 2.6A4 4 0 0 1 5 17z"/></svg>
+        <span>Figma Source</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN APP CONTAINER (SIDEBAR RAIL + CONTENT)
+       ======================================================================== -->
+  <div class="app-container">
+    
+    <!-- --- Sidebar Navigation --- -->
+    <aside class="app-sidebar" id="app-sidebar">
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Get Started
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#overview" class="nav-link active">Overview & Philosophy</a></li>
+          <li class="nav-item"><a href="#principles" class="nav-link">Design Principles</a></li>
+          <li class="nav-item"><a href="#quickstart" class="nav-link">Quick Setup</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          Foundations (Page 1)
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#colors-green" class="nav-link">CN Green (Primary)</a></li>
+          <li class="nav-item"><a href="#colors-amber" class="nav-link">CN Yellow / Amber</a></li>
+          <li class="nav-item"><a href="#colors-slate" class="nav-link">CN Slate & Neutrals</a></li>
+          <li class="nav-item"><a href="#colors-semantic" class="nav-link">Semantic Feedback</a></li>
+          <li class="nav-item"><a href="#typography" class="nav-link">Typography (Archivo)</a></li>
+          <li class="nav-item"><a href="#elevation" class="nav-link">Elevation & Depth</a></li>
+          <li class="nav-item"><a href="#spacing" class="nav-link">Spacing & Radius</a></li>
+          <li class="nav-item"><a href="#grid" class="nav-link">Responsive Grids</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          Components (Page 2 & 3)
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#buttons" class="nav-link">Buttons <span class="nav-link-badge">6 Variants</span></a></li>
+          <li class="nav-item"><a href="#badges" class="nav-link">Badges & Chips</a></li>
+          <li class="nav-item"><a href="#forms" class="nav-link">Form Controls</a></li>
+          <li class="nav-item"><a href="#slider" class="nav-link">Price Range Slider</a></li>
+          <li class="nav-item"><a href="#toggles" class="nav-link">Switches & Toggles</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          Marketplace (Page 4)
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#card-grid" class="nav-link">Listing Card (Grid)</a></li>
+          <li class="nav-item"><a href="#card-list" class="nav-link">Listing Card (List)</a></li>
+          <li class="nav-item"><a href="#seller-card" class="nav-link">Verified Seller Card</a></li>
+          <li class="nav-item"><a href="#faceted-filter" class="nav-link">Faceted Filter Sidebar</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Overlays & Messaging (Page 5)
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#chat-thread" class="nav-link">In-App Chat Widget</a></li>
+          <li class="nav-item"><a href="#uploader" class="nav-link">Media Uploader</a></li>
+          <li class="nav-item"><a href="#toasts" class="nav-link">Toasts & Alerts</a></li>
+          <li class="nav-item"><a href="#modals" class="nav-link">Modals & Dialogs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Developer Tools
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#token-export" class="nav-link">Token Inspector</a></li>
+          <li class="nav-item"><a href="#checklist" class="nav-link">Implementation Checklist</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- --- Main Content Container --- -->
+    <main class="main-content">
+      
+      <!-- --- Hero Section --- -->
+      <section class="ds-hero" id="overview">
+        <div class="ds-hero-badge">
+          <span>✨</span>
+          <span>Enterprise Marketplace Design System</span>
+        </div>
+        <h1>Connect Nigeria Design System</h1>
+        <p>
+          A high-utility, accessibility-focused design language engineered for Nigeria's largest business directory and marketplace ecosystems (ConnectNigeria & Urgent.ng). Anchored by high-energy <strong>CN Green</strong>, balanced slate foundations, and modular 4px spatial consistency.
+        </p>
+
+        <div class="ds-hero-actions">
+          <a href="#buttons" class="btn btn-primary btn-md">
+            <span>Explore Components</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a href="#token-export" class="btn btn-secondary btn-md">
+            <span>View Design Tokens</span>
+          </a>
+          <button class="btn btn-outline btn-md open-modal-trigger">
+            <span>Launch Live Modal Demo</span>
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">5<span> Pages</span></div>
+            <div class="stat-label">Core Figma Specs</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">44<span>+</span></div>
+            <div class="stat-label">Design Tokens</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">4<span>px</span></div>
+            <div class="stat-label">Baseline Spatial Scale</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">AAA<span>/AA</span></div>
+            <div class="stat-label">WCAG Contrast Ratios</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Principles --- -->
+      <section class="ds-section" id="principles">
+        <div class="section-header">
+          <div class="section-tag">Philosophy</div>
+          <h2 class="section-title">Design Principles</h2>
+          <p class="section-desc">Four foundational tenets guide every component, pattern, and token decision in the CN Ecosystem.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-xl);">
+          <div style="background: var(--color-bg-surface); padding: var(--space-xl); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); box-shadow: var(--elevation-xs);">
+            <div style="font-size: 24px; margin-bottom: 8px;">🎯</div>
+            <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">Utility-First Clarity</h3>
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5;">Dense marketplace listings require instant legibility. High-contrast typography and clear visual signifiers make prices and locations scan fast.</p>
+          </div>
+          <div style="background: var(--color-bg-surface); padding: var(--space-xl); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); box-shadow: var(--elevation-xs);">
+            <div style="font-size: 24px; margin-bottom: 8px;">📐</div>
+            <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">Modular 4px Hierarchy</h3>
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5;">From 4px micro-paddings to 80px page margins, every component adheres strictly to a predictable base-4 rhythmic grid.</p>
+          </div>
+          <div style="background: var(--color-bg-surface); padding: var(--space-xl); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); box-shadow: var(--elevation-xs);">
+            <div style="font-size: 24px; margin-bottom: 8px;">🛡️</div>
+            <h3 style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">Marketplace Trust Signals</h3>
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5;">Built-in verified merchant badges, buyer-seller chat threads, and Nigerian Naira (₦) currency formatting anchor transaction confidence.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Quick Setup --- -->
+      <section class="ds-section" id="quickstart">
+        <div class="section-header">
+          <div class="section-tag">Implementation</div>
+          <h2 class="section-title">Quick Setup</h2>
+          <p class="section-desc">Import the CN Design System tokens and Archivo Google font into your web application in seconds.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <span class="showcase-title">HTML / CSS Integration</span>
+            <span class="showcase-badge">HTML5 / CSS3</span>
+          </div>
+          <div class="showcase-code-panel active">
+            <button class="code-copy-btn">Copy Snippet</button>
+            <pre><code>&lt;!-- 1. Import Archivo Google Font in &lt;head&gt; --&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet"&gt;
+
+&lt;!-- 2. Link Design Tokens --&gt;
+&lt;link rel="stylesheet" href="tokens.css"&gt;
+
+&lt;!-- 3. Example Component Usage --&gt;
+&lt;button class="btn btn-primary btn-md"&gt;
+  Connect with Seller
+&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 1: FOUNDATIONS (COLORS, TYPOGRAPHY, ELEVATION, SPACING, GRIDS)
+           ==================================================================== -->
+
+      <!-- --- CN Green Palette --- -->
+      <section class="ds-section" id="colors-green">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Colors</div>
+          <h2 class="section-title">CN Green (Primary Brand Palette)</h2>
+          <p class="section-desc">The core brand signature used for primary CTAs, active states, verified badges, and search highlights. Click any swatch to copy its Hex code.</p>
+        </div>
+
+        <div class="palette-grid">
+          <div class="color-swatch" data-hex="#f4fbe6" data-token="--cn-green-50">
+            <div class="swatch-color" style="background: #f4fbe6;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-50</span><span class="showcase-badge">Tint</span></div>
+              <div class="swatch-hex">#f4fbe6</div>
+              <div class="swatch-desc">Subtle badge fills, card backgrounds</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#e8f7cb" data-token="--cn-green-100">
+            <div class="swatch-color" style="background: #e8f7cb;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-100</span><span class="showcase-badge">Tint</span></div>
+              <div class="swatch-hex">#e8f7cb</div>
+              <div class="swatch-desc">Hover fills for light containers</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#d6f0a3" data-token="--cn-green-200">
+            <div class="swatch-color" style="background: #d6f0a3;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-200</span><span class="showcase-badge">Accent</span></div>
+              <div class="swatch-hex">#d6f0a3</div>
+              <div class="swatch-desc">Outgoing chat message bubbles</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#bbe770" data-token="--cn-green-300">
+            <div class="swatch-color" style="background: #bbe770;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-300</span><span class="showcase-badge">Accent</span></div>
+              <div class="swatch-hex">#bbe770</div>
+              <div class="swatch-desc">Slider tracks & secondary accents</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#93c700" data-token="--cn-green-500">
+            <div class="swatch-color" style="background: #93c700;"><span class="swatch-copy-hint" style="color: #fff;">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-500</span><span class="showcase-badge" style="background: var(--cn-green-500); color: #000;">PRIMARY</span></div>
+              <div class="swatch-hex">#93c700</div>
+              <div class="swatch-desc">Core brand signature CTA & search</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#80ad00" data-token="--cn-green-600">
+            <div class="swatch-color" style="background: #80ad00;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-600</span><span class="showcase-badge">State</span></div>
+              <div class="swatch-hex">#80ad00</div>
+              <div class="swatch-desc">Primary button :hover state</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#668a00" data-token="--cn-green-700">
+            <div class="swatch-color" style="background: #668a00;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-700</span><span class="showcase-badge">State</span></div>
+              <div class="swatch-hex">#668a00</div>
+              <div class="swatch-desc">Primary button :active / pressed</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#3b5000" data-token="--cn-green-900">
+            <div class="swatch-color" style="background: #3b5000;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-green-900</span><span class="showcase-badge">Text</span></div>
+              <div class="swatch-hex">#3b5000</div>
+              <div class="swatch-desc">High contrast text on green badges</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- CN Yellow / Amber Palette --- -->
+      <section class="ds-section" id="colors-amber">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Colors</div>
+          <h2 class="section-title">CN Yellow / Amber (Alert & Promotional)</h2>
+          <p class="section-desc">Used for ratings, promotional chips, warning banners, and pending merchant quotes.</p>
+        </div>
+
+        <div class="palette-grid">
+          <div class="color-swatch" data-hex="#fffbee" data-token="--cn-yellow-light">
+            <div class="swatch-color" style="background: #fffbee;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-yellow-light</span></div>
+              <div class="swatch-hex">#fffbee</div>
+              <div class="swatch-desc">Warning banner fill, pending badge bg</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#e28a2a" data-token="--cn-yellow-normal">
+            <div class="swatch-color" style="background: #e28a2a;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-yellow-normal</span></div>
+              <div class="swatch-hex">#e28a2a</div>
+              <div class="swatch-desc">Star ratings, warning accents</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#ab6216" data-token="--cn-yellow-dark">
+            <div class="swatch-color" style="background: #ab6216;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-yellow-dark</span></div>
+              <div class="swatch-hex">#ab6216</div>
+              <div class="swatch-desc">High-contrast warning text</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#592e03" data-token="--cn-yellow-darker">
+            <div class="swatch-color" style="background: #592e03;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-yellow-darker</span></div>
+              <div class="swatch-hex">#592e03</div>
+              <div class="swatch-desc">Maximum contrast amber text</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- CN Slate & Neutrals --- -->
+      <section class="ds-section" id="colors-slate">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Colors</div>
+          <h2 class="section-title">CN Blue / Slate (Neutral Foundation)</h2>
+          <p class="section-desc">The structural foundation providing deep typographic contrast, crisp borders, and dark mode containers.</p>
+        </div>
+
+        <div class="palette-grid">
+          <div class="color-swatch" data-hex="#eff1f4" data-token="--cn-blue-50">
+            <div class="swatch-color" style="background: #eff1f4;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-blue-50</span></div>
+              <div class="swatch-hex">#eff1f4</div>
+              <div class="swatch-desc">Page canvas tint, secondary button fill</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#e1e6ec" data-token="--cn-blue-100">
+            <div class="swatch-color" style="background: #e1e6ec;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-blue-100</span></div>
+              <div class="swatch-hex">#e1e6ec</div>
+              <div class="swatch-desc">Default component border & dividers</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#657996" data-token="--cn-blue-400">
+            <div class="swatch-color" style="background: #657996;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-blue-400</span></div>
+              <div class="swatch-hex">#657996</div>
+              <div class="swatch-desc">Placeholder text & muted timestamps</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#1b2330" data-token="--cn-blue-700">
+            <div class="swatch-color" style="background: #1b2330;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>cn-blue-700</span></div>
+              <div class="swatch-hex">#1b2330</div>
+              <div class="swatch-desc">Primary typography, titles & prices</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Semantic Feedback --- -->
+      <section class="ds-section" id="colors-semantic">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Colors</div>
+          <h2 class="section-title">Semantic Feedback Tokens</h2>
+          <p class="section-desc">Status indicators calibrated with WCAG 2.1 AA/AAA compliance for transaction alerts, verification badges, and destructive states.</p>
+        </div>
+
+        <div class="palette-grid">
+          <div class="color-swatch" data-hex="#16a34a" data-token="--feedback-success">
+            <div class="swatch-color" style="background: #16a34a;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>Success</span><span class="showcase-badge">Verified</span></div>
+              <div class="swatch-hex">#16a34a</div>
+              <div class="swatch-desc">Verified merchant, orders, safe signals</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#dc2626" data-token="--feedback-error">
+            <div class="swatch-color" style="background: #dc2626;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>Error / Danger</span></div>
+              <div class="swatch-hex">#dc2626</div>
+              <div class="swatch-desc">Destructive actions & validation errors</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#e28a2a" data-token="--feedback-warning">
+            <div class="swatch-color" style="background: #e28a2a;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>Warning</span></div>
+              <div class="swatch-hex">#e28a2a</div>
+              <div class="swatch-desc">Pending approvals, stock alerts</div>
+            </div>
+          </div>
+          <div class="color-swatch" data-hex="#2563eb" data-token="--feedback-info">
+            <div class="swatch-color" style="background: #2563eb;"><span class="swatch-copy-hint">Click to Copy</span></div>
+            <div class="swatch-info">
+              <div class="swatch-name"><span>Information</span></div>
+              <div class="swatch-hex">#2563eb</div>
+              <div class="swatch-desc">System announcements, info notices</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Typography Scale --- -->
+      <section class="ds-section" id="typography">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Typography</div>
+          <h2 class="section-title">Typography Scale (Archivo)</h2>
+          <p class="section-desc">Constructed around Google Font <strong>Archivo</strong>, a versatile geometric grotesque engineered for digital marketplaces with dense numerical and text requirements.</p>
+        </div>
+
+        <table class="typography-specimen-table">
+          <thead>
+            <tr>
+              <th>Level / Token</th>
+              <th>Specimen</th>
+              <th>Size / Line-Height</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Display H1</code></td>
+              <td class="type-sample-h1">Explore Lagos Marketplace</td>
+              <td class="type-meta">61px / 1.1</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Display H2</code></td>
+              <td class="type-sample-h2">Find Verified Businesses</td>
+              <td class="type-meta">49px / 1.15</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Display H3</code></td>
+              <td class="type-sample-h3">Featured Product Deals</td>
+              <td class="type-meta">39px / 1.2</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Title H4</code></td>
+              <td class="type-sample-h4">Faceted Search Filters</td>
+              <td class="type-meta">31px / 1.3</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Title H5</code></td>
+              <td class="type-sample-h5">Sony Alpha a7 IV Full-Frame Camera</td>
+              <td class="type-meta">25px / 1.3</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Title 1 / 3</code></td>
+              <td class="type-sample-t1">₦1,450,000 Special Offer</td>
+              <td class="type-meta">20px / 1.4</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+            <tr>
+              <td><code>Title 2 / 4</code></td>
+              <td class="type-sample-t2">Computers & Consumer Electronics</td>
+              <td class="type-meta">16px / 1.5</td>
+              <td class="type-meta">Medium (500)</td>
+            </tr>
+            <tr>
+              <td><code>Body Regular</code></td>
+              <td class="type-sample-body">Connect Nigeria empowers businesses across Africa to showcase products, connect with customers, and transact securely.</td>
+              <td class="type-meta">13px / 1.5</td>
+              <td class="type-meta">Regular (400)</td>
+            </tr>
+            <tr>
+              <td><code>Caption</code></td>
+              <td class="type-sample-caption">VERIFIED MERCHANT • IKEJA, LAGOS</td>
+              <td class="type-meta">10px / 1.5</td>
+              <td class="type-meta">Bold (700)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Interactive Type Tester Sandbox -->
+        <div class="type-tester-box">
+          <div class="type-tester-controls">
+            <div style="font-weight: bold; font-size: 13px;">Live Archivo Tester</div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <label for="type-size-slider" style="font-size: 12px; color: var(--color-text-muted);">Font Size:</label>
+              <input type="range" id="type-size-slider" min="12" max="64" value="28" style="accent-color: var(--cn-green-500); cursor: pointer;">
+              <span id="type-size-val" style="font-family: var(--font-family-mono); font-size: 12px; font-weight: bold;">28px</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <label for="type-weight-select" style="font-size: 12px; color: var(--color-text-muted);">Weight:</label>
+              <select id="type-weight-select" class="form-select" style="height: 32px; padding: 0 28px 0 10px; font-size: 12px;">
+                <option value="400">Regular (400)</option>
+                <option value="500">Medium (500)</option>
+                <option value="700" selected>Bold (700)</option>
+                <option value="800">ExtraBold (800)</option>
+              </select>
+            </div>
+          </div>
+          <div id="type-tester-output" class="type-tester-output" contenteditable="true" style="font-size: 28px; font-weight: 700;">
+            Connect Nigeria — Discover 50,000+ Verified Businesses
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Elevation & Depth --- -->
+      <section class="ds-section" id="elevation">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Elevation</div>
+          <h2 class="section-title">Elevation & Shadows</h2>
+          <p class="section-desc">Standardized shadow depths for interactive cards, dropdown menus, toast notifications, and modal surfaces.</p>
+        </div>
+
+        <div class="elevation-grid">
+          <div class="elevation-card elevation-none">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">none</div>
+            <div style="font-size: 13px; font-weight: bold;">Flat / Inset</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">Dividers, fields</div>
+          </div>
+          <div class="elevation-card elevation-xs">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">--elevation-xs</div>
+            <div style="font-size: 13px; font-weight: bold;">Subtle Lift</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">Toggle switch, tags</div>
+          </div>
+          <div class="elevation-card elevation-sm">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">--elevation-sm</div>
+            <div style="font-size: 13px; font-weight: bold;">Listing Card</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">Product listings</div>
+          </div>
+          <div class="elevation-card elevation-md">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">--elevation-md</div>
+            <div style="font-size: 13px; font-weight: bold;">Dropdown / Menu</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">Popovers, selects</div>
+          </div>
+          <div class="elevation-card elevation-lg">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">--elevation-lg</div>
+            <div style="font-size: 13px; font-weight: bold;">Modal Dialog</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">Toasts, modals</div>
+          </div>
+          <div class="elevation-card elevation-xl">
+            <div style="font-size: 12px; font-family: var(--font-family-mono); margin-bottom: 4px;">--elevation-xl</div>
+            <div style="font-size: 13px; font-weight: bold;">Floating Chat</div>
+            <div style="font-size: 11px; color: var(--color-text-muted); margin-top: 4px;">FAB & chat widget</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Spacing & Radius --- -->
+      <section class="ds-section" id="spacing">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Layout</div>
+          <h2 class="section-title">Spacing Scale & Border Radius</h2>
+          <p class="section-desc">Strict incremental 4px spacing hierarchy to maintain rhythmic harmony across all viewports.</p>
+        </div>
+
+        <div class="spacing-grid">
+          <div class="spacing-row">
+            <span class="spacing-name">--space-2xs</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 4px;"></span></div>
+            <span class="spacing-val">4px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-xs</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 8px;"></span></div>
+            <span class="spacing-val">8px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-sm</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 12px;"></span></div>
+            <span class="spacing-val">12px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-md</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 16px;"></span></div>
+            <span class="spacing-val">16px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-lg</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 20px;"></span></div>
+            <span class="spacing-val">20px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-xl</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 24px;"></span></div>
+            <span class="spacing-val">24px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-2xl</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 32px;"></span></div>
+            <span class="spacing-val">32px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-3xl</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 40px;"></span></div>
+            <span class="spacing-val">40px</span>
+          </div>
+          <div class="spacing-row">
+            <span class="spacing-name">--space-5xl</span>
+            <div class="spacing-bar-wrapper"><span class="spacing-bar" style="width: 64px;"></span></div>
+            <span class="spacing-val">64px</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Responsive Grid Architecture --- -->
+      <section class="ds-section" id="grid">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Grids</div>
+          <h2 class="section-title">Responsive Breakpoints</h2>
+          <p class="section-desc">Standard 4-tier grid system optimized for desktop marketplaces, compact laptops, tablets, and smartphones.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md);">
+          <div style="background: var(--color-bg-surface); padding: var(--space-lg); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);">
+            <div style="font-weight: bold; font-size: 15px; margin-bottom: 2px;">Desktop (1440px)</div>
+            <div style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;">12 Columns • 32px Gutter</div>
+            <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 6px;">Margin: 80px | Max Content: 1280px</div>
+          </div>
+          <div style="background: var(--color-bg-surface); padding: var(--space-lg); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);">
+            <div style="font-weight: bold; font-size: 15px; margin-bottom: 2px;">Narrow (1280px)</div>
+            <div style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;">12 Columns • 24px Gutter</div>
+            <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 6px;">Margin: 40px | Max Content: 1200px</div>
+          </div>
+          <div style="background: var(--color-bg-surface); padding: var(--space-lg); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);">
+            <div style="font-weight: bold; font-size: 15px; margin-bottom: 2px;">Tablet (768px)</div>
+            <div style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;">8 Columns • 20px Gutter</div>
+            <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 6px;">Margin: 32px | Max Content: 704px</div>
+          </div>
+          <div style="background: var(--color-bg-surface); padding: var(--space-lg); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg);">
+            <div style="font-weight: bold; font-size: 15px; margin-bottom: 2px;">Mobile (390px)</div>
+            <div style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;">4 Columns • 16px Gutter</div>
+            <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 6px;">Margin: 20px | Full Bleed Scroll</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 2 & 3: CORE COMPONENTS (BUTTONS, BADGES, FORMS, SLIDERS)
+           ==================================================================== -->
+
+      <!-- --- Buttons Matrix --- -->
+      <section class="ds-section" id="buttons">
+        <div class="section-header">
+          <div class="section-tag">Components • Actions</div>
+          <h2 class="section-title">Button Hierarchy</h2>
+          <p class="section-desc">Six hierarchical variations available in Small (32px), Medium (40px), and Large (48px) sizes with interactive feedback.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Button Hierarchies</span>
+              <span class="showcase-badge">6 Variants</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="component-row">
+              <button class="btn btn-primary btn-md">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                Primary Accent
+              </button>
+              <button class="btn btn-secondary btn-md">Secondary Slate</button>
+              <button class="btn btn-outline btn-md">Outline Green</button>
+              <button class="btn btn-ghost btn-md">Ghost Button</button>
+              <button class="btn btn-dark btn-md">Dark Neutral</button>
+              <button class="btn btn-destructive btn-md">Destructive</button>
+              <button class="btn btn-primary btn-md" disabled>Disabled</button>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;!-- Button Hierarchies --&gt;
+&lt;button class="btn btn-primary btn-md"&gt;Primary Accent&lt;/button&gt;
+&lt;button class="btn btn-secondary btn-md"&gt;Secondary Slate&lt;/button&gt;
+&lt;button class="btn btn-outline btn-md"&gt;Outline Green&lt;/button&gt;
+&lt;button class="btn btn-ghost btn-md"&gt;Ghost Button&lt;/button&gt;
+&lt;button class="btn btn-dark btn-md"&gt;Dark Neutral&lt;/button&gt;
+&lt;button class="btn btn-destructive btn-md"&gt;Destructive&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Button Sizes Showcase -->
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Button Sizes</span>
+              <span class="showcase-badge">3 Sizes</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="component-row">
+              <button class="btn btn-primary btn-sm">Small (32px)</button>
+              <button class="btn btn-primary btn-md">Medium (40px)</button>
+              <button class="btn btn-primary btn-lg">Large (48px)</button>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;button class="btn btn-primary btn-sm"&gt;Small (32px)&lt;/button&gt;
+&lt;button class="btn btn-primary btn-md"&gt;Medium (40px)&lt;/button&gt;
+&lt;button class="btn btn-primary btn-lg"&gt;Large (48px)&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Badges & Chips --- -->
+      <section class="ds-section" id="badges">
+        <div class="section-header">
+          <div class="section-tag">Components • Indicators</div>
+          <h2 class="section-title">Badges & Chips</h2>
+          <p class="section-desc">Pill badges for status indicators and interactive chips for filter refinement.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Status Badges</span>
+              <span class="showcase-badge">Pills</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="component-row">
+              <span class="badge badge-success"><span class="badge-dot"></span>Verified Business</span>
+              <span class="badge badge-warning"><span class="badge-dot"></span>Pending Quote</span>
+              <span class="badge badge-error"><span class="badge-dot"></span>Item Out of Stock</span>
+              <span class="badge badge-info"><span class="badge-dot"></span>Active Promotion</span>
+              <span class="badge badge-neutral"><span class="badge-dot"></span>Draft Listing</span>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;span class="badge badge-success"&gt;&lt;span class="badge-dot"&gt;&lt;/span&gt;Verified Business&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;&lt;span class="badge-dot"&gt;&lt;/span&gt;Pending Quote&lt;/span&gt;
+&lt;span class="badge badge-error"&gt;&lt;span class="badge-dot"&gt;&lt;/span&gt;Item Out of Stock&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;&lt;span class="badge-dot"&gt;&lt;/span&gt;Active Promotion&lt;/span&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Filter Chips</span>
+              <span class="showcase-badge">Interactive</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="component-row">
+              <button class="chip active">All Electronics <span class="chip-remove" onclick="event.stopPropagation(); this.parentElement.remove();">×</span></button>
+              <button class="chip active">Lagos Mainland <span class="chip-remove" onclick="event.stopPropagation(); this.parentElement.remove();">×</span></button>
+              <button class="chip">Under ₦50,000</button>
+              <button class="chip">Brand New Only</button>
+              <button class="chip">Verified Sellers Only</button>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;button class="chip active"&gt;
+  All Electronics &lt;span class="chip-remove"&gt;×&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="chip"&gt;Under ₦50,000&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Form Controls --- -->
+      <section class="ds-section" id="forms">
+        <div class="section-header">
+          <div class="section-tag">Components • Inputs</div>
+          <h2 class="section-title">Form Controls</h2>
+          <p class="section-desc">Accessible, responsive inputs with focus rings, validation cues, and custom select menus.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Text Inputs & Selects</span>
+              <span class="showcase-badge">Forms</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div style="display: flex; flex-direction: column; gap: var(--space-lg); width: 100%; max-width: 480px;">
+              <!-- Standard Input with Prefix Icon -->
+              <div class="form-group">
+                <label class="form-label" for="search-input-demo">Marketplace Search</label>
+                <div class="form-input-wrapper">
+                  <span class="input-icon-prefix">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  </span>
+                  <input type="text" id="search-input-demo" class="form-input has-prefix" placeholder="Search products, brands, or businesses...">
+                </div>
+                <span class="form-helper">Enter product keywords or seller names</span>
+              </div>
+
+              <!-- Select Dropdown -->
+              <div class="form-group">
+                <label class="form-label" for="category-select">Product Category</label>
+                <select id="category-select" class="form-input form-select">
+                  <option value="">All Categories</option>
+                  <option value="electronics">Electronics & Gadgets</option>
+                  <option value="vehicles">Vehicles & Automotives</option>
+                  <option value="real-estate">Real Estate & Property</option>
+                  <option value="services">Professional Services</option>
+                </select>
+              </div>
+
+              <!-- Error Input -->
+              <div class="form-group">
+                <label class="form-label" for="price-input-demo">Price (NGN) <span style="color: var(--feedback-error);">*</span></label>
+                <input type="text" id="price-input-demo" class="form-input is-error" value="-2500">
+                <span class="form-helper error">Please enter a valid positive Naira amount</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="form-group"&gt;
+  &lt;label class="form-label"&gt;Marketplace Search&lt;/label&gt;
+  &lt;div class="form-input-wrapper"&gt;
+    &lt;span class="input-icon-prefix"&gt;🔍&lt;/span&gt;
+    &lt;input type="text" class="form-input has-prefix" placeholder="Search..."&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Price Slider --- -->
+      <section class="ds-section" id="slider">
+        <div class="section-header">
+          <div class="section-tag">Components • Sliders</div>
+          <h2 class="section-title">Price Range Slider</h2>
+          <p class="section-desc">Interactive pricing slider designed specifically for Nigerian marketplace transactions.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Price Filter Slider</span>
+              <span class="showcase-badge">Interactive</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="range-slider-container">
+              <div class="range-values">
+                <span>Filter Max Price:</span>
+                <span id="price-slider-display" style="color: var(--cn-green-600); font-weight: bold; font-size: 16px;">₦85,000</span>
+              </div>
+              <input type="range" id="price-slider-input" class="range-input" min="5000" max="500000" step="5000" value="85000">
+              <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--color-text-muted); margin-top: 6px;">
+                <span>₦5,000</span>
+                <span>₦250,000</span>
+                <span>₦500,000+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="range-slider-container"&gt;
+  &lt;div class="range-values"&gt;
+    &lt;span&gt;Price:&lt;/span&gt;
+    &lt;span id="price-slider-display"&gt;₦85,000&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input type="range" class="range-input" min="5000" max="500000" step="5000" value="85000"&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Switches & Toggles --- -->
+      <section class="ds-section" id="toggles">
+        <div class="section-header">
+          <div class="section-tag">Components • Selection</div>
+          <h2 class="section-title">Switches, Checkboxes & Radios</h2>
+          <p class="section-desc">Accessible toggle controls styled with brand green accents.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Selection Controls</span>
+              <span class="showcase-badge">Interactive</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-2xl); align-items: center;">
+              <!-- Toggle -->
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="checkbox-label">
+                <input type="checkbox" class="custom-checkbox" checked>
+                <span>Verified Sellers Only</span>
+              </label>
+
+              <!-- Radio -->
+              <label class="radio-label">
+                <input type="radio" name="demo-radio" class="custom-radio" checked>
+                <span>Brand New</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="demo-radio" class="custom-radio">
+                <span>Refurbished</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;!-- Toggle Switch --&gt;
+&lt;label class="toggle-switch"&gt;
+  &lt;input type="checkbox" checked&gt;
+  &lt;span class="toggle-slider"&gt;&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;!-- Custom Checkbox --&gt;
+&lt;label class="checkbox-label"&gt;
+  &lt;input type="checkbox" class="custom-checkbox" checked&gt;
+  &lt;span&gt;Verified Sellers Only&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 4: MARKETPLACE ORGANISMS (LISTING CARDS, SELLER CARDS, FILTERS)
+           ==================================================================== -->
+
+      <!-- --- Product Card (Grid View) --- -->
+      <section class="ds-section" id="card-grid">
+        <div class="section-header">
+          <div class="section-tag">Marketplace • Organisms</div>
+          <h2 class="section-title">Product Listing Card (Grid View)</h2>
+          <p class="section-desc">The flagship marketplace card (300px × 416px) featuring Naira price formatting, condition tag, location metadata, interactive favorite heart, and verified badge.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Marketplace Grid Card (300px)</span>
+              <span class="showcase-badge">Flagship</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="marketplace-card-grid">
+              <div class="card-media-wrapper">
+                <div class="card-floating-badge">
+                  <span class="badge badge-success"><span class="badge-dot"></span>Verified</span>
+                </div>
+                <div class="card-media-actions">
+                  <button class="card-icon-action" aria-label="Add to favorites" onclick="this.classList.toggle('active'); showToast(this.classList.contains('active') ? 'Added to Saved Items' : 'Removed from Saved Items', 'info');">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  </button>
+                  <button class="card-icon-action" aria-label="Share listing" onclick="showToast('Listing link copied to clipboard!', 'success');">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                  </button>
+                </div>
+                <!-- Clean Placeholder Canvas Graphic -->
+                <svg width="100%" height="100%" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="300" height="200" fill="#202938"/>
+                  <circle cx="150" cy="90" r="42" fill="#2d3748"/>
+                  <path d="M135 90L145 100L165 75" stroke="#a6d445" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="150" y="160" fill="#a0aec0" font-family="Archivo, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Premium Tech Marketplace</text>
+                </svg>
+              </div>
+
+              <div class="card-content">
+                <div class="card-tag-row">
+                  <span class="card-tag">Electronics</span>
+                  <span class="card-tag">Brand New</span>
+                </div>
+
+                <h3 class="card-title">Apple MacBook Pro 14" M3 Pro 18GB/512GB Space Gray</h3>
+
+                <div class="card-price-row">
+                  <span class="card-price">₦1,850,000</span>
+                  <span class="card-price-original">₦2,100,000</span>
+                </div>
+
+                <div class="card-meta-row">
+                  <div class="card-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Ikeja, Lagos</span>
+                  </div>
+                  <div class="card-rating">
+                    <span>★</span>
+                    <span>4.9 (84)</span>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-sm" style="margin-top: 8px; width: 100%;" onclick="showToast('Opened details for MacBook Pro 14', 'info');">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="marketplace-card-grid"&gt;
+  &lt;div class="card-media-wrapper"&gt;
+    &lt;span class="badge badge-success"&gt;Verified&lt;/span&gt;
+    &lt;img src="product.jpg" class="card-media-img"&gt;
+  &lt;/div&gt;
+  &lt;div class="card-content"&gt;
+    &lt;span class="card-tag"&gt;Electronics&lt;/span&gt;
+    &lt;h3 class="card-title"&gt;Apple MacBook Pro 14" M3 Pro&lt;/h3&gt;
+    &lt;div class="card-price-row"&gt;
+      &lt;span class="card-price"&gt;₦1,850,000&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;button class="btn btn-primary btn-sm"&gt;View Details&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Product Card (List View) --- -->
+      <section class="ds-section" id="card-list">
+        <div class="section-header">
+          <div class="section-tag">Marketplace • Organisms</div>
+          <h2 class="section-title">Product Listing Card (List View)</h2>
+          <p class="section-desc">Horizontal layout optimized for dense search result feeds and directory queries.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Marketplace List Card</span>
+              <span class="showcase-badge">Horizontal</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="marketplace-card-list">
+              <div class="list-media">
+                <svg width="100%" height="100%" viewBox="0 0 180 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="180" height="160" fill="#1b2330"/>
+                  <circle cx="90" cy="70" r="30" fill="#2d394d"/>
+                  <path d="M80 70L88 78L102 60" stroke="#93c700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="90" y="125" fill="#c5ced9" font-family="Archivo, sans-serif" font-size="11" font-weight="600" text-anchor="middle">CN Verified Merchant</text>
+                </svg>
+              </div>
+              <div class="list-content">
+                <div>
+                  <div class="card-tag-row">
+                    <span class="badge badge-success"><span class="badge-dot"></span>Verified Dealer</span>
+                    <span class="card-tag">Automotive</span>
+                  </div>
+                  <h3 class="card-title" style="margin-top: 6px;">Toyota RAV4 2021 XLE AWD — Foreign Used</h3>
+                  <div class="card-location" style="font-size: 12px; color: var(--color-text-muted); margin-top: 4px;">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Victoria Island, Lagos</span>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 12px;">
+                  <span class="card-price">₦26,500,000</span>
+                  <button class="btn btn-primary btn-sm" onclick="showToast('Contacting Victoria Island Motors', 'info');">Contact Dealer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="marketplace-card-list"&gt;
+  &lt;div class="list-media"&gt;&lt;img src="car.jpg"&gt;&lt;/div&gt;
+  &lt;div class="list-content"&gt;
+    &lt;h3 class="card-title"&gt;Toyota RAV4 2021 XLE AWD&lt;/h3&gt;
+    &lt;span class="card-price"&gt;₦26,500,000&lt;/span&gt;
+    &lt;button class="btn btn-primary btn-sm"&gt;Contact Dealer&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Verified Seller Card --- -->
+      <section class="ds-section" id="seller-card">
+        <div class="section-header">
+          <div class="section-tag">Marketplace • Trust</div>
+          <h2 class="section-title">Verified Seller Profile Card</h2>
+          <p class="section-desc">Profile card highlighting merchant credentials, trust metrics, and rapid response channels.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Merchant Trust Profile</span>
+              <span class="showcase-badge">Trust Organism</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="seller-trust-card">
+              <div class="seller-header">
+                <div style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #1b2330, #2d394d); display: flex; align-items: center; justify-content: center; color: #a6d445; font-weight: bold; font-size: 20px; border: 2px solid var(--cn-green-500);">
+                  CN
+                </div>
+                <div class="seller-info">
+                  <h4>
+                    <span>Heritage Tech Solutions</span>
+                    <svg class="seller-verified-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </h4>
+                  <div style="font-size: 12px; color: var(--color-text-muted);">CAC Registered Business • Member since 2019</div>
+                </div>
+              </div>
+
+              <div class="seller-stats">
+                <div>
+                  <div class="seller-stat-val">4.9 ★</div>
+                  <div class="seller-stat-lbl">240 Reviews</div>
+                </div>
+                <div>
+                  <div class="seller-stat-val">&lt; 15 mins</div>
+                  <div class="seller-stat-lbl">Response Time</div>
+                </div>
+                <div>
+                  <div class="seller-stat-val">99.4%</div>
+                  <div class="seller-stat-lbl">Fulfillment</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: var(--space-sm);">
+                <button class="btn btn-primary btn-sm" style="flex: 1;" onclick="showToast('Calling Heritage Tech: +234 800 123 4567', 'success');">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Call Merchant
+                </button>
+                <a href="#chat-thread" class="btn btn-secondary btn-sm" style="flex: 1;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Direct Message
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="seller-trust-card"&gt;
+  &lt;div class="seller-header"&gt;
+    &lt;h4&gt;Heritage Tech Solutions &lt;span class="badge badge-success"&gt;Verified&lt;/span&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="seller-stats"&gt;
+    &lt;div&gt;&lt;span class="seller-stat-val"&gt;4.9 ★&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="btn btn-primary btn-sm"&gt;Call Merchant&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Faceted Filter Sidebar --- -->
+      <section class="ds-section" id="faceted-filter">
+        <div class="section-header">
+          <div class="section-tag">Marketplace • Discovery</div>
+          <h2 class="section-title">Faceted Search & Filter Sidebar</h2>
+          <p class="section-desc">Comprehensive filtration organism accommodating multi-select categories, condition tags, verified toggles, and state boundaries.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Faceted Filter Organism</span>
+              <span class="showcase-badge">Organism</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div style="width: 100%; max-width: 320px; background: var(--color-bg-surface); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: var(--space-xl); box-shadow: var(--elevation-xs);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); padding-bottom: var(--space-xs); border-bottom: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: 15px; font-weight: bold;">Filters</h4>
+                <button style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;" onclick="showToast('Cleared active filter chips', 'info');">Clear All</button>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                <div>
+                  <div style="font-size: 13px; font-weight: bold; margin-bottom: 8px;">State & City</div>
+                  <select class="form-input form-select" style="font-size: 13px; height: 36px;">
+                    <option>Lagos State (All LGAs)</option>
+                    <option>Abuja (FCT)</option>
+                    <option>Rivers (Port Harcourt)</option>
+                    <option>Oyo (Ibadan)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <div style="font-size: 13px; font-weight: bold; margin-bottom: 8px;">Condition</div>
+                  <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="checkbox-label" style="font-size: 13px;"><input type="checkbox" class="custom-checkbox" checked> <span>Brand New (142)</span></label>
+                    <label class="checkbox-label" style="font-size: 13px;"><input type="checkbox" class="custom-checkbox" checked> <span>Foreign Used (89)</span></label>
+                    <label class="checkbox-label" style="font-size: 13px;"><input type="checkbox" class="custom-checkbox"> <span>Locally Used (34)</span></label>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="font-size: 13px; font-weight: bold; margin-bottom: 8px;">Trust Rating</div>
+                  <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label class="radio-label" style="font-size: 13px;"><input type="radio" name="filter-star" class="custom-radio" checked> <span>4.5 Stars & above</span></label>
+                    <label class="radio-label" style="font-size: 13px;"><input type="radio" name="filter-star" class="custom-radio"> <span>4.0 Stars & above</span></label>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-md" style="width: 100%; margin-top: 8px;" onclick="showToast('Applied 3 marketplace filters', 'success');">
+                  Apply Filters
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="filter-sidebar"&gt;
+  &lt;h4&gt;Filter Results&lt;/h4&gt;
+  &lt;select class="form-input form-select"&gt;&lt;option&gt;Lagos State&lt;/option&gt;&lt;/select&gt;
+  &lt;label class="checkbox-label"&gt;
+    &lt;input type="checkbox" class="custom-checkbox" checked&gt;
+    &lt;span&gt;Brand New (142)&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;button class="btn btn-primary btn-md"&gt;Apply Filters&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 5: OVERLAYS, MESSAGING & FEEDBACK (CHAT, UPLOADER, TOASTS, MODALS)
+           ==================================================================== -->
+
+      <!-- --- In-App Chat Widget --- -->
+      <section class="ds-section" id="chat-thread">
+        <div class="section-header">
+          <div class="section-tag">Overlays • Messaging</div>
+          <h2 class="section-title">In-App Buyer / Seller Chat Widget</h2>
+          <p class="section-desc">Interactive transaction messaging thread with green-tinted outgoing bubbles, seller verification, quick-reply action chips, and automated responses.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Interactive Chat Thread</span>
+              <span class="showcase-badge">Live Demo</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="chat-window-demo">
+              <div class="chat-header">
+                <div class="chat-user-info">
+                  <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--cn-green-500); display: flex; align-items: center; justify-content: center; font-weight: bold; color: #0a0e14;">
+                    VM
+                  </div>
+                  <div>
+                    <div style="font-size: 13.5px; font-weight: bold; color: var(--color-text-primary); display: flex; align-items: center; gap: 4px;">
+                      <span>Vanguard Motors</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--cn-green-600)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div style="font-size: 11px; color: var(--cn-green-600);">Online • Typically replies in 5 mins</div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="showToast('Calling seller direct line', 'info');">Call</button>
+              </div>
+
+              <div class="chat-messages-container" id="chat-demo-messages">
+                <div class="chat-bubble chat-bubble-incoming">
+                  Hello! Welcome to Vanguard Motors Ikeja. How can we assist you with this listing today?
+                  <div class="chat-bubble-time">10:42 AM</div>
+                </div>
+                <div class="chat-bubble chat-bubble-outgoing">
+                  Hi, is the MacBook Pro 14" M3 Pro still available for immediate pickup in Ikeja?
+                  <div class="chat-bubble-time">10:44 AM • Read</div>
+                </div>
+                <div class="chat-bubble chat-bubble-incoming">
+                  Yes, it's brand new and sealed with full Apple 1-year warranty!
+                  <div class="chat-bubble-time">10:45 AM</div>
+                </div>
+              </div>
+
+              <!-- Quick Replies -->
+              <div class="chat-quick-replies">
+                <button class="quick-reply-pill">What's your best price?</button>
+                <button class="quick-reply-pill">Can I inspect it today?</button>
+                <button class="quick-reply-pill">Do you offer delivery to Lekki?</button>
+              </div>
+
+              <div class="chat-input-bar">
+                <input type="text" id="chat-demo-input" class="chat-input" placeholder="Type your message to seller...">
+                <button id="chat-demo-send" class="btn btn-primary btn-sm" style="border-radius: var(--radius-full); padding: 0 14px;">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;!-- Chat Bubble Architecture --&gt;
+&lt;div class="chat-bubble chat-bubble-incoming"&gt;
+  Hello! Is this item available?
+  &lt;div class="chat-bubble-time"&gt;10:42 AM&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="chat-bubble chat-bubble-outgoing"&gt;
+  Yes, ready for pickup in Ikeja!
+  &lt;div class="chat-bubble-time"&gt;10:44 AM • Read&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Media Uploader --- -->
+      <section class="ds-section" id="uploader">
+        <div class="section-header">
+          <div class="section-tag">Overlays • Media</div>
+          <h2 class="section-title">Drag & Drop Image Uploader</h2>
+          <p class="section-desc">Interactive multi-file uploader component with dashed CN Green boundary, upload progress indicator, and card preview queue.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Marketplace Photo Uploader</span>
+              <span class="showcase-badge">Interactive</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body" style="flex-direction: column;">
+            <div class="uploader-box" id="uploader-dropzone">
+              <div class="upload-icon-cloud">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></svg>
+              </div>
+              <h4 style="font-size: 15px; font-weight: bold; margin-bottom: 4px;">Drag & Drop product photos here, or click to browse</h4>
+              <p style="font-size: 12px; color: var(--color-text-muted);">Supports JPG, PNG, WebP up to 10MB each (Up to 12 images)</p>
+            </div>
+
+            <!-- Upload Queue -->
+            <div id="uploader-queue" style="width: 100%; max-width: 520px;">
+              <div class="upload-progress-card">
+                <div style="font-size: 20px;">🖼️</div>
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: bold; margin-bottom: 4px;">
+                    <span>macbook_hero_front.png (3.2 MB)</span>
+                    <span style="color: var(--cn-green-700); font-family: var(--font-family-mono);">100%</span>
+                  </div>
+                  <div class="upload-progress-bar">
+                    <div class="upload-progress-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+                <button style="color: var(--feedback-error); font-size: 14px; font-weight: bold; padding: 4px;" onclick="this.parentElement.remove()">✕</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="uploader-box" id="uploader-dropzone"&gt;
+  &lt;h4&gt;Drag & Drop photos or click to browse&lt;/h4&gt;
+  &lt;p&gt;Max 10MB each • Up to 12 images&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="upload-progress-card"&gt;
+  &lt;div class="upload-progress-bar"&gt;
+    &lt;div class="upload-progress-fill" style="width: 100%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Toasts & Alerts --- -->
+      <section class="ds-section" id="toasts">
+        <div class="section-header">
+          <div class="section-tag">Overlays • Notifications</div>
+          <h2 class="section-title">Toast Notifications</h2>
+          <p class="section-desc">Floating notification banners with left vertical accent bars and auto-dismiss timing.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Interactive Toast Triggers</span>
+              <span class="showcase-badge">4 Types</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="component-row">
+              <button class="btn btn-primary btn-md" data-toast-trigger="success" data-toast-msg="Product listing verified and published successfully!">
+                Trigger Success Toast
+              </button>
+              <button class="btn btn-secondary btn-md" data-toast-trigger="info" data-toast-msg="Buyer sent an inquiry for Apple MacBook Pro 14">
+                Trigger Info Toast
+              </button>
+              <button class="btn btn-outline btn-md" data-toast-trigger="warning" data-toast-msg="Price exceeds recommended market average for Lagos">
+                Trigger Warning Toast
+              </button>
+              <button class="btn btn-destructive btn-md" data-toast-trigger="error" data-toast-msg="Payment authorization timeout. Please retry.">
+                Trigger Error Toast
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML / JS</button>
+            <pre><code>// Toast Trigger Usage
+showToast("Listing saved successfully!", "success");
+showToast("Network error. Please try again.", "error");
+showToast("Pending buyer review", "warning");</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Modals & Dialogs --- -->
+      <section class="ds-section" id="modals">
+        <div class="section-header">
+          <div class="section-tag">Overlays • Dialogs</div>
+          <h2 class="section-title">Modals & Dialogs</h2>
+          <p class="section-desc">Accessible dialog windows featuring backdrop blur and primary action confirmations.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Modal Dialog Overlay</span>
+              <span class="showcase-badge">Interactive</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Preview</button>
+              <button class="showcase-tab" data-mode="code">Code</button>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <button class="btn btn-primary btn-lg open-modal-trigger">
+              Launch Sample Modal Dialog
+            </button>
+          </div>
+
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy HTML</button>
+            <pre><code>&lt;div class="modal-backdrop"&gt;
+  &lt;div class="modal-card"&gt;
+    &lt;div class="modal-header"&gt;
+      &lt;h3&gt;Confirm Business Verification&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;
+      Are you sure you want to verify Heritage Tech Solutions?
+    &lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      &lt;button class="btn btn-secondary btn-sm"&gt;Cancel&lt;/button&gt;
+      &lt;button class="btn btn-primary btn-sm"&gt;Confirm Verification&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           DEVELOPER TOOLS: TOKEN EXPORT & CHECKLIST
+           ==================================================================== -->
+      <section class="ds-section" id="token-export">
+        <div class="section-header">
+          <div class="section-tag">Developer Tools</div>
+          <h2 class="section-title">Design Token Export (CSS & JSON)</h2>
+          <p class="section-desc">Direct access to raw design tokens for engineering handoff across Web, React, Vue, Flutter, and iOS/Android teams.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">tokens.css</span>
+              <span class="showcase-badge">CSS Custom Properties</span>
+            </div>
+          </div>
+
+          <div class="showcase-code-panel active">
+            <button class="code-copy-btn">Copy tokens.css</button>
+            <pre><code>:root {
+  /* CN GREEN (PRIMARY BRAND) */
+  --cn-green-50: #f4fbe6;
+  --cn-green-100: #e8f7cb;
+  --cn-green-200: #d6f0a3;
+  --cn-green-300: #bbe770;
+  --cn-green-400: #b8e255;
+  --cn-green-500: #93c700; /* Core Brand Primary */
+  --cn-green-600: #80ad00;
+  --cn-green-700: #668a00;
+  --cn-green-900: #3b5000;
+
+  /* CN YELLOW / AMBER (ALERT & RATINGS) */
+  --cn-yellow-light: #fffbee;
+  --cn-yellow-normal: #e28a2a;
+  --cn-yellow-dark: #ab6216;
+
+  /* CN BLUE / SLATE (FOUNDATIONS & TEXT) */
+  --cn-blue-50: #eff1f4;
+  --cn-blue-100: #e1e6ec; /* Default Border */
+  --cn-blue-400: #657996;
+  --cn-blue-700: #1b2330; /* Primary Headings & Prices */
+
+  /* TYPOGRAPHY */
+  --font-family-primary: 'Archivo', sans-serif;
+  --font-size-display-1: 61px;
+  --font-size-title-1: 31px;
+  --font-size-body: 13px;
+
+  /* ELEVATION */
+  --elevation-sm: 0px 2px 8px -2px rgba(0, 0, 0, 0.06);
+  --elevation-md: 0px 4px 12px -2px rgba(0, 0, 0, 0.10);
+  --elevation-lg: 0px 8px 24px -4px rgba(0, 0, 0, 0.12);
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Implementation Checklist --- -->
+      <section class="ds-section" id="checklist">
+        <div class="section-header">
+          <div class="section-tag">Quality Control</div>
+          <h2 class="section-title">Implementation Checklist</h2>
+          <p class="section-desc">Key requirements when translating Figma components into production frontend code.</p>
+        </div>
+
+        <div style="background: var(--color-bg-surface); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-xl); padding: var(--space-xl);">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-md);">
+            <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;">
+              <span style="color: var(--cn-green-600); font-weight: bold;">✓</span>
+              <span><strong>Google Font:</strong> Ensure <code>Archivo</code> is imported in HTML <code>&lt;head&gt;</code> with weights 400, 500, 700.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;">
+              <span style="color: var(--cn-green-600); font-weight: bold;">✓</span>
+              <span><strong>Primary CTAs:</strong> Use <code>--cn-green-500</code> (<code>#93c700</code>) for action buttons with dark or white bold text.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;">
+              <span style="color: var(--cn-green-600); font-weight: bold;">✓</span>
+              <span><strong>Typography Color:</strong> Use <code>--cn-blue-700</code> (<code>#1b2330</code>) for primary text and titles rather than generic pure black.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;">
+              <span style="color: var(--cn-green-600); font-weight: bold;">✓</span>
+              <span><strong>Currency Formatting:</strong> Render Nigerian Naira as <code>₦[amount]</code> with bold 700 font weight.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;">
+              <span style="color: var(--cn-green-600); font-weight: bold;">✓</span>
+              <span><strong>Chat Bubbles:</strong> Render outgoing buyer bubbles with green tint (<code>--cn-green-200</code>) and incoming with white surface cards.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DIALOG (OVERLAY DEMO)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="demo-modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="font-size: 17px; font-weight: bold; color: var(--color-text-primary);">Verify Business Listing</h3>
+        <button class="modal-close-trigger" style="font-size: 18px; color: var(--color-text-muted);" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 12px;">You are about to verify <strong>Heritage Tech Solutions</strong> on the Connect Nigeria marketplace network.</p>
+        <p style="color: var(--color-text-muted); font-size: 13px;">This will award the verified green shield badge, boost search placement by 2.4x, and unlock direct customer WhatsApp messaging.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm modal-close-trigger">Cancel</button>
+        <button class="btn btn-primary btn-sm modal-close-trigger" onclick="showToast('Business verified successfully!', 'success');">Confirm & Verify</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       COMMAND PALETTE MODAL (CTRL + K)
+       ======================================================================== -->
+  <div class="cmd-palette-backdrop" id="cmd-palette-backdrop">
+    <div class="cmd-palette-card">
+      <div class="cmd-input-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-muted)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a component name, token, or page to jump...">
+        <span class="search-shortcut">ESC</span>
+      </div>
+      <ul class="cmd-results-list" id="cmd-results-list">
+        <!-- Rendered dynamically via JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* ==========================================================================
+   CONNECT NIGERIA (CN) DESIGN SYSTEM — DESIGN TOKENS
+   Version: 1.0.0
+   Target Typography: Archivo
+   Anchor Brand: CN Green (#93c700 / #a6d445)
+   ========================================================================== */
+
+:root {
+  /* ==========================================================================
+     CN GREEN (PRIMARY BRAND PALETTE)
+     ========================================================================== */
+  --cn-green-50: #f4fbe6;
+  --cn-green-100: #e8f7cb;
+  --cn-green-200: #d6f0a3;
+  --cn-green-300: #bbe770;
+  --cn-green-400: #b8e255;
+  --cn-green-500: #93c700; /* Core Brand Primary: CTA buttons, search, active states */
+  --cn-green-500-vibrant: #a6d445;
+  --cn-green-600: #80ad00; /* Primary hover */
+  --cn-green-700: #668a00; /* Primary active / pressed */
+  --cn-green-800: #526f00; /* Deep borders, high-contrast accents */
+  --cn-green-900: #3b5000; /* Deep text on light green badges */
+
+  /* ==========================================================================
+     CN YELLOW / AMBER (PROMOTIONAL & ALERT PALETTE)
+     ========================================================================== */
+  --cn-yellow-light: #fffbee;
+  --cn-yellow-light-hover: #fef7db;
+  --cn-yellow-light-active: #fcedbb;
+  --cn-yellow-normal: #e28a2a;
+  --cn-yellow-normal-hover: #d07718;
+  --cn-yellow-normal-active: #b96710;
+  --cn-yellow-dark: #ab6216;
+  --cn-yellow-dark-hover: #8f4f0e;
+  --cn-yellow-dark-active: #743e09;
+  --cn-yellow-darker: #592e03;
+
+  /* ==========================================================================
+     CN BLUE / SLATE (NEUTRALS & TYPOGRAPHY FOUNDATIONS)
+     ========================================================================== */
+  --cn-blue-50: #eff1f4;
+  --cn-blue-100: #e1e6ec; /* Standard component border */
+  --cn-blue-200: #c5ced9;
+  --cn-blue-300: #9baac0;
+  --cn-blue-400: #657996; /* Placeholder text & secondary metadata */
+  --cn-blue-500: #42526b; /* Subtitles & secondary labels */
+  --cn-blue-600: #2d394d;
+  --cn-blue-700: #1b2330; /* Primary text, headings & high-contrast prices */
+  --cn-blue-800: #10151f;
+  --cn-blue-900: #0a0e14;
+
+  /* ==========================================================================
+     CN WHITE & GRAYSCALE (SURFACES & CONTAINERS)
+     ========================================================================== */
+  --cn-white: #ffffff;
+  --cn-white-50: #fbfbfb;
+  --cn-white-100: #f7f7f7;
+  --cn-white-200: #f4f4f4;
+  --cn-white-300: #eeeeee;
+  --cn-white-400: #e6e6e6;
+  --cn-white-500: #dadada;
+  --cn-white-600: #cccccc;
+  --cn-white-700: #a7a7a7;
+  --cn-white-800: #7b7b7b;
+  --cn-white-900: #434343;
+
+  /* ==========================================================================
+     SEMANTIC FEEDBACK & STATUS TOKENS
+     ========================================================================== */
+  --feedback-success: #16a34a;
+  --feedback-success-bg: #f0fdf4;
+  --feedback-success-border: #bbf7d0;
+  --feedback-success-text: #14532d;
+
+  --feedback-error: #dc2626;
+  --feedback-error-bg: #fef2f2;
+  --feedback-error-border: #fecaca;
+  --feedback-error-text: #991b1b;
+
+  --feedback-warning: #e28a2a;
+  --feedback-warning-bg: #fffbee;
+  --feedback-warning-border: #fcedbb;
+  --feedback-warning-text: #ab6216;
+
+  --feedback-info: #2563eb;
+  --feedback-info-bg: #eff6ff;
+  --feedback-info-border: #bfdbfe;
+  --feedback-info-text: #1e40af;
+
+  /* ==========================================================================
+     THEME SEMANTIC ROLES (LIGHT DEFAULT)
+     ========================================================================== */
+  --color-bg-canvas: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-raised: #ffffff;
+  --color-bg-surface-sunken: #f1f4f8;
+  --color-bg-nav: rgba(255, 255, 255, 0.85);
+  --color-border-subtle: #e1e6ec;
+  --color-border-strong: #c5ced9;
+  --color-text-primary: #1b2330;
+  --color-text-secondary: #42526b;
+  --color-text-muted: #657996;
+  --color-text-inverse: #ffffff;
+
+  --color-brand-primary: var(--cn-green-500);
+  --color-brand-primary-hover: var(--cn-green-600);
+  --color-brand-primary-active: var(--cn-green-700);
+  --color-brand-primary-text: #10151f;
+  --color-brand-ring: rgba(147, 199, 0, 0.25);
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+  --font-family-primary: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Monaco, monospace;
+  --font-variation-default: 'wdth' 100;
+
+  --font-size-display-1: 61px;
+  --font-size-display-2: 49px;
+  --font-size-display-3: 39px;
+  --font-size-title-1: 31px;
+  --font-size-title-2: 25px;
+  --font-size-title-3: 20px;
+  --font-size-title-4: 16px;
+  --font-size-body: 13px;
+  --font-size-body-sm: 12px;
+  --font-size-caption: 10px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* ==========================================================================
+     ELEVATION & SHADOWS
+     ========================================================================== */
+  --elevation-none: none;
+  --elevation-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  --elevation-sm: 0px 2px 8px -2px rgba(0, 0, 0, 0.06);
+  --elevation-md: 0px 4px 12px -2px rgba(0, 0, 0, 0.10);
+  --elevation-lg: 0px 8px 24px -4px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.04);
+  --elevation-xl: 0px 12px 32px -4px rgba(0, 0, 0, 0.16);
+
+  /* ==========================================================================
+     SPACING (BASE-4 INCREMENTAL SCALE)
+     ========================================================================== */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 40px;
+  --space-4xl: 48px;
+  --space-5xl: 64px;
+  --space-6xl: 80px;
+
+  /* ==========================================================================
+     BORDER RADIUS STANDARDS
+     ========================================================================== */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     TRANSITIONS & MOTION
+     ========================================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ==========================================================================
+     RESPONSIVE LAYOUT CONSTRAINTS
+     ========================================================================== */
+  --container-max-desktop: 1440px;
+  --container-content-desktop: 1280px;
+  --gutter-desktop: 32px;
+  --margin-desktop: 80px;
+}
+
+/* ==========================================================================
+   DARK THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] {
+  --color-bg-canvas: #0a0e14;
+  --color-bg-surface: #10151f;
+  --color-bg-surface-raised: #18202d;
+  --color-bg-surface-sunken: #07090d;
+  --color-bg-nav: rgba(16, 21, 31, 0.85);
+  --color-border-subtle: #222d3d;
+  --color-border-strong: #354359;
+  --color-text-primary: #f4f7fb;
+  --color-text-secondary: #c5ced9;
+  --color-text-muted: #8595ad;
+  --color-text-inverse: #0a0e14;
+
+  --cn-blue-50: #141b26;
+  --cn-blue-100: #222d3d;
+  --cn-blue-200: #354359;
+  --cn-blue-300: #546885;
+  --cn-white: #10151f;
+  --cn-white-50: #141b26;
+  --cn-white-100: #17202d;
+  --cn-white-200: #1b2636;
+  --cn-white-300: #222d3d;
+
+  --elevation-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  --elevation-sm: 0px 2px 8px -2px rgba(0, 0, 0, 0.40);
+  --elevation-md: 0px 4px 12px -2px rgba(0, 0, 0, 0.50);
+  --elevation-lg: 0px 8px 24px -4px rgba(0, 0, 0, 0.60), 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  --elevation-xl: 0px 12px 32px -4px rgba(0, 0, 0, 0.75);
+
+  --color-brand-primary-text: #0a0e14;
+  --color-brand-ring: rgba(166, 212, 69, 0.35);
+}
