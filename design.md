@@ -185,7 +185,52 @@ The CN marketplace uses a 4-breakpoint responsive grid architecture:
 
 ---
 
-## 7. Component Specifications
+## 7. System Iconography (Figma Node `51:12627`)
+
+The CN Design System icon library comprises **1,170+ standardized vector outline icons** organized into 19 functional domains.
+
+### 7.1 Architecture & Geometry Specifications
+- **Grid Bounding Box:** Standard `24×24px` viewport canvas aligned to a `4px/8px` internal keyline grid.
+- **Stroke Width:** Standard `2.0px` (`stroke-width="2"`), with support for Light (`1.5px`) and Bold (`2.5px`).
+- **Cap & Join:** `stroke-linecap="round"` and `stroke-linejoin="round"` for consistent friendly yet sharp terminals.
+- **Inherited Color:** Strict usage of `stroke="currentColor"` and `fill="none"` to allow dynamic inheritance from parent CSS design tokens (`--cn-green-600`, `--cn-blue-500`, `--color-text-primary`, etc.) across light and dark themes.
+- **Optical Centering:** Symmetrical visual weight with 2px padding inset from the outer bounding box.
+
+### 7.2 The 19 Figma Icon Categories
+| Category | Symbols Count | Primary Purpose & Usage |
+| :--- | :--- | :--- |
+| **Finance & eCommerce** | 79 icons | Shopping carts, bags, cards, wallets, receipts, currency |
+| **General & Actions** | 193 icons | Search, filters, hearts, stars, bookmarks, settings, copy |
+| **Communication** | 58 icons | Chat messages, mail, phone calls, annotations, inbox |
+| **Alerts & Feedback** | 26 icons | Warning alerts, bells, announcements, thumbs up/down |
+| **Arrows & Direction** | 92 icons | Chevrons, directional navigation, refresh loops |
+| **Security & Trust** | 36 icons | Verified shields, locks, keys, biometric authentication |
+| **Users & Profiles** | 41 icons | Merchant profiles, buyer accounts, team rosters |
+| **Media & Devices** | 108 icons | Cameras, video players, displays, mobile hardware |
+| **Maps & Travel** | 45 icons | Geo-pins, street maps, compass, delivery vehicles |
+| **Files & Documents** | 57 icons | File attachments, cloud uploads/downloads, folders |
+| **Layout & Grid** | 63 icons | Alignments, split views, grid vs list toggles |
+| **Development** | 57 icons | Code brackets, terminals, database servers |
+| **Charts & Analytics** | 49 icons | Trend lines, bar metrics, activity summaries |
+| **Editor & Typography** | 104 icons | Text formatting, alignments, bezier curves, pen tools |
+| **Time & Scheduling** | 28 icons | Clocks, calendars, alarms, hour-markers |
+| **Images & Assets** | 29 icons | Photos, image filters, camera lenses, flash |
+| **Education & Badges** | 31 icons | Academic badges, awards, certificates, beakers |
+| **Weather & Environment** | 52 icons | Clouds, rain, sun, lightning, moon cycles |
+| **Shapes & Geometry** | 25 icons | Cubes, polyhedra, dice, circles, hexagons |
+
+### 7.3 Implementation Standards
+```html
+<svg class="cn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="8" cy="21" r="1" />
+  <circle cx="19" cy="21" r="1" />
+  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+</svg>
+```
+
+---
+
+## 8. Component Specifications
 
 ### 7.1 Buttons
 Buttons are available in 6 hierarchy styles and 3 standard sizes with full state variations (`Default`, `Hover`, `Active`, `Focus`, `Disabled`).

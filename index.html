@@ -84,6 +84,7 @@
           <li class="nav-item"><a href="#elevation" class="nav-link">Elevation & Depth</a></li>
           <li class="nav-item"><a href="#spacing" class="nav-link">Spacing & Radius</a></li>
           <li class="nav-item"><a href="#grid" class="nav-link">Responsive Grids</a></li>
+          <li class="nav-item"><a href="#icons" class="nav-link">System Icons <span class="nav-link-badge">1,170+ Lib</span></a></li>
         </ul>
       </div>
 
@@ -868,6 +869,169 @@
             <div style="font-weight: bold; font-size: 15px; margin-bottom: 2px;">Mobile (390px)</div>
             <div style="font-size: 12px; color: var(--cn-green-600); font-weight: bold;">4 Columns • 16px Gutter</div>
             <div style="font-size: 12px; color: var(--color-text-muted); margin-top: 6px;">Margin: 20px | Full Bleed Scroll</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- System Icons (Figma 24px Outline Library) --- -->
+      <section class="ds-section" id="icons">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Icons (Figma Node 51:12627)</div>
+          <h2 class="section-title">System Iconography</h2>
+          <p class="section-desc">
+            A comprehensive library of 1,170+ standardized 24×24px outline icons across 19 categories. Engineered on a 4px keyline grid with consistent 2px stroke geometry, rounded terminal caps, and optical balancing for the Connect Nigeria marketplace.
+          </p>
+        </div>
+
+        <!-- Icon System Architecture Spec Highlights -->
+        <div class="icon-specs-banner">
+          <div class="icon-spec-item">
+            <div class="icon-spec-badge">24 × 24 px</div>
+            <div class="icon-spec-title">Default ViewBox</div>
+            <div class="icon-spec-sub">Built on standard 4px / 24px keyline boundary</div>
+          </div>
+          <div class="icon-spec-item">
+            <div class="icon-spec-badge">2.0 px</div>
+            <div class="icon-spec-title">Standard Stroke</div>
+            <div class="icon-spec-sub">Round linecap & linejoin for friendly, crisp feel</div>
+          </div>
+          <div class="icon-spec-item">
+            <div class="icon-spec-badge">19 Categories</div>
+            <div class="icon-spec-title">1,170+ Symbols</div>
+            <div class="icon-spec-sub">eCommerce, Navigation, Finance, Security, etc.</div>
+          </div>
+          <div class="icon-spec-item">
+            <div class="icon-spec-badge">currentColor</div>
+            <div class="icon-spec-title">Token-Inherited</div>
+            <div class="icon-spec-sub">Fully adaptive to CN Green, Slate, and dark themes</div>
+          </div>
+        </div>
+
+        <!-- Interactive Icon Explorer -->
+        <div class="icon-explorer-card">
+          <!-- Explorer Toolbar -->
+          <div class="icon-explorer-toolbar">
+            <div class="icon-search-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search-glass"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="text" id="icon-search-input" class="icon-search-input" placeholder="Search 1,170+ Figma icons (e.g. cart, wallet, search, star, alert)..." autocomplete="off" />
+              <button id="icon-search-clear" class="icon-search-clear" style="display: none;" title="Clear search">✕</button>
+            </div>
+
+            <!-- Controls (Size, Stroke, Color) -->
+            <div class="icon-controls-group">
+              <!-- Size selector -->
+              <div class="icon-ctrl-item">
+                <span class="icon-ctrl-label">Size:</span>
+                <div class="icon-toggle-pill" id="icon-size-pills">
+                  <button class="icon-pill-btn" data-size="16">16px</button>
+                  <button class="icon-pill-btn" data-size="20">20px</button>
+                  <button class="icon-pill-btn active" data-size="24">24px</button>
+                  <button class="icon-pill-btn" data-size="32">32px</button>
+                </div>
+              </div>
+
+              <!-- Stroke selector -->
+              <div class="icon-ctrl-item">
+                <span class="icon-ctrl-label">Stroke:</span>
+                <div class="icon-toggle-pill" id="icon-stroke-pills">
+                  <button class="icon-pill-btn" data-stroke="1.5">1.5px</button>
+                  <button class="icon-pill-btn active" data-stroke="2">2px</button>
+                  <button class="icon-pill-btn" data-stroke="2.5">2.5px</button>
+                </div>
+              </div>
+
+              <!-- Color selector -->
+              <div class="icon-ctrl-item">
+                <span class="icon-ctrl-label">Color:</span>
+                <div class="icon-color-swatches" id="icon-color-swatches">
+                  <button class="icon-color-dot active" data-color="currentColor" title="Default (Theme color)" style="background: var(--color-text-primary);"></button>
+                  <button class="icon-color-dot" data-color="#008753" title="CN Green" style="background: var(--cn-green-600);"></button>
+                  <button class="icon-color-dot" data-color="#0f172a" title="CN Slate / Blue" style="background: var(--cn-blue-500);"></button>
+                  <button class="icon-color-dot" data-color="#ffb703" title="CN Yellow" style="background: var(--cn-yellow-500);"></button>
+                  <button class="icon-color-dot" data-color="#e02424" title="Destructive Red" style="background: #e02424;"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="icon-category-bar" id="icon-category-bar">
+            <button class="icon-cat-chip active" data-cat="all">All Categories <span class="chip-count" id="count-all">1,173</span></button>
+            <button class="icon-cat-chip" data-cat="ecommerce">Finance & eCommerce <span class="chip-count">79</span></button>
+            <button class="icon-cat-chip" data-cat="general">General & Actions <span class="chip-count">193</span></button>
+            <button class="icon-cat-chip" data-cat="communication">Communication <span class="chip-count">58</span></button>
+            <button class="icon-cat-chip" data-cat="alerts">Alerts & Feedback <span class="chip-count">26</span></button>
+            <button class="icon-cat-chip" data-cat="security">Security & Trust <span class="chip-count">36</span></button>
+            <button class="icon-cat-chip" data-cat="users">Users & Profiles <span class="chip-count">41</span></button>
+            <button class="icon-cat-chip" data-cat="media">Media & Devices <span class="chip-count">108</span></button>
+            <button class="icon-cat-chip" data-cat="maps">Maps & Travel <span class="chip-count">45</span></button>
+            <button class="icon-cat-chip" data-cat="files">Files & Content <span class="chip-count">57</span></button>
+            <button class="icon-cat-chip" data-cat="arrows">Arrows & Direction <span class="chip-count">92</span></button>
+          </div>
+
+          <!-- Dynamic Icon Status Bar -->
+          <div class="icon-status-bar">
+            <span id="icon-results-info">Showing curated essential icons with live SVG copy. Click any card to copy SVG code.</span>
+            <span class="icon-hint-badge">Figma Node: 51:12627</span>
+          </div>
+
+          <!-- The Rendered Icon Grid -->
+          <div class="icon-display-grid" id="icon-display-grid">
+            <!-- Dynamically populated via JS -->
+          </div>
+
+          <!-- Empty State (hidden by default) -->
+          <div class="icon-empty-state" id="icon-empty-state" style="display: none;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+            <div style="font-weight: 700; font-size: 16px; margin-top: 8px;">No matching icons found</div>
+            <div style="font-size: 13px; color: var(--color-text-muted); margin-top: 4px;">Try searching for terms like "cart", "user", "bell", "chevron", "lock", or "star".</div>
+            <button class="btn btn-secondary btn-sm" id="icon-reset-btn" style="margin-top: 12px;">Reset Filters</button>
+          </div>
+        </div>
+
+        <!-- Developer Integration Snippet Showcase -->
+        <div class="showcase-card" style="margin-top: var(--space-xl);">
+          <div class="showcase-header">
+            <div class="showcase-title-area">
+              <span class="showcase-title">Icon Code Standards & Usage</span>
+              <span class="showcase-badge">SVG Best Practices</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-mode="preview">Guidelines</button>
+              <button class="showcase-tab" data-mode="code">Usage Snippet</button>
+            </div>
+          </div>
+          <div class="showcase-body">
+            <div class="icon-guidelines-list">
+              <div class="guideline-row">
+                <span class="guideline-bullet">1</span>
+                <div>
+                  <strong>Optical Sizing & Keyline Alignment:</strong> Always align icons to a 24×24px bounding box. In smaller containers (like inline buttons), scale proportionally to 16px or 20px using the provided size classes.
+                </div>
+              </div>
+              <div class="guideline-row">
+                <span class="guideline-bullet">2</span>
+                <div>
+                  <strong>Token-Inherited currentColor:</strong> Never hardcode fill or stroke hex colors in the SVG. Rely on <code>stroke="currentColor"</code> so the icon inherits context-appropriate CSS color tokens across dark mode and state transitions.
+                </div>
+              </div>
+              <div class="guideline-row">
+                <span class="guideline-bullet">3</span>
+                <div>
+                  <strong>Accessibility & Semantics:</strong> For decorative icons in buttons with accompanying text, use <code>aria-hidden="true"</code>. For standalone icon buttons, supply an explicit <code>aria-label</code> or screen-reader accessible label.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-code-panel">
+            <button class="code-copy-btn">Copy Snippet</button>
+            <pre><code>&lt;!-- Standard Connect Nigeria 24px Icon Component --&gt;
+&lt;svg class="cn-icon cn-icon-md" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"&gt;
+  &lt;!-- e.g., shopping-cart-01 --&gt;
+  &lt;circle cx="8" cy="21" r="1" /&gt;
+  &lt;circle cx="19" cy="21" r="1" /&gt;
+  &lt;path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /&gt;
+&lt;/svg&gt;</code></pre>
           </div>
         </div>
       </section>
