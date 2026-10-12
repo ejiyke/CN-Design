@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initUploader();
   initCodeCopyButtons();
   initIconExplorer();
+  initBrandIdentity();
 });
 
 /* --- 1. Theme Management (Light / Dark) --- */
@@ -171,6 +172,7 @@ function initCommandPalette() {
 
   const navItems = [
     { title: 'Overview & Philosophy', href: '#overview', cat: 'Introduction' },
+    { title: 'Logo & Favicon (Official Assets)', href: '#brand-identity', cat: 'Foundations' },
     { title: 'CN Green (Primary Brand Palette)', href: '#colors-green', cat: 'Foundations' },
     { title: 'CN Yellow / Amber Palette', href: '#colors-amber', cat: 'Foundations' },
     { title: 'CN Blue / Slate Palette', href: '#colors-slate', cat: 'Foundations' },
@@ -754,6 +756,61 @@ function initIconExplorer() {
       const defaultChip = document.querySelector('.icon-cat-chip[data-cat="all"]');
       if (defaultChip) defaultChip.classList.add('active');
       renderIcons();
+    });
+  }
+}
+
+/* ==========================================================================
+   15. BRAND IDENTITY (LOGOS & FAVICON - FIGMA FRAME 72:3759)
+   ========================================================================== */
+
+function initBrandIdentity() {
+  // Tab simulation theme toggle
+  const tabSim = document.getElementById('browser-tab-simulation');
+  const tabToggles = document.querySelectorAll('#tab-sim-toggles .icon-pill-btn');
+  
+  if (tabSim && tabToggles.length) {
+    tabToggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabToggles.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const theme = btn.dataset.tabTheme;
+        tabSim.setAttribute('data-theme', theme);
+      });
+    });
+  }
+
+  // Copy Logo HTML snippet
+  const copyLogoBtn = document.querySelector('.copy-logo-html-btn');
+  if (copyLogoBtn) {
+    copyLogoBtn.addEventListener('click', () => {
+      const snippet = '<img src="logo.png" alt="Connect Nigeria" width="180" height="52" loading="eager" />';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(snippet).then(() => {
+          showToast('Copied Connect Nigeria <img> tag to clipboard!', 'success');
+        }).catch(() => {
+          showToast('Copied Connect Nigeria <img> tag to clipboard!', 'success');
+        });
+      } else {
+        showToast('Copied Connect Nigeria <img> tag to clipboard!', 'success');
+      }
+    });
+  }
+
+  // Copy Favicon link tag
+  const copyFaviconBtn = document.querySelector('.copy-favicon-link-btn');
+  if (copyFaviconBtn) {
+    copyFaviconBtn.addEventListener('click', () => {
+      const snippet = '<link rel="icon" type="image/png" href="favicon.png">\n<link rel="apple-touch-icon" href="favicon.png">';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(snippet).then(() => {
+          showToast('Copied <link rel="icon"> tags to clipboard!', 'success');
+        }).catch(() => {
+          showToast('Copied <link rel="icon"> tags to clipboard!', 'success');
+        });
+      } else {
+        showToast('Copied <link rel="icon"> tags to clipboard!', 'success');
+      }
     });
   }
 }

@@ -1863,6 +1863,339 @@ input, select, textarea {
 }
 
 /* ==========================================================================
+   BRAND IDENTITY & LOGO/FAVICON SHOWCASE (FIGMA FRAME 72:3759)
+   ========================================================================== */
+
+.brand-card-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.brand-preview-dual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.brand-canvas-card {
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.brand-canvas-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elevation-md);
+}
+
+.brand-canvas-light {
+  background: #ffffff;
+}
+
+.brand-canvas-dark {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+.canvas-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.brand-canvas-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  padding: var(--space-lg) 0;
+}
+
+.brand-display-logo {
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+}
+
+.canvas-meta {
+  font-family: var(--font-family-mono);
+  font-size: 11px;
+  color: #94a3b8;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: var(--space-sm);
+  margin-top: auto;
+}
+
+.brand-spec-callouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.spec-callout-item {
+  background: var(--color-bg-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.spec-callout-title {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.spec-callout-desc {
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Favicon Hero Card */
+.favicon-hero-card {
+  background: var(--color-bg-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.favicon-bubble {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 135, 83, 0.18);
+  border: 3px solid var(--cn-green-500);
+  transition: transform var(--transition-fast);
+}
+
+.favicon-hero-card:hover .favicon-bubble {
+  transform: scale(1.08);
+}
+
+.favicon-large-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Browser Tab Simulation */
+.browser-tab-simulation {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--elevation-sm);
+  transition: all var(--transition-fast);
+}
+
+.browser-tab-simulation[data-theme="light"] {
+  background: #e2e8f0;
+}
+
+.browser-tab-simulation[data-theme="dark"] {
+  background: #0f172a;
+}
+
+.tab-bar-strip {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px 0 10px;
+  gap: 4px;
+}
+
+.sim-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 8px 8px 0 0;
+  font-size: 11.5px;
+  font-weight: 500;
+  max-width: 200px;
+  cursor: default;
+}
+
+.browser-tab-simulation[data-theme="light"] .sim-tab-active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.06);
+}
+
+.browser-tab-simulation[data-theme="dark"] .sim-tab-active {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.browser-tab-simulation[data-theme="light"] .sim-tab-inactive {
+  color: #64748b;
+}
+
+.browser-tab-simulation[data-theme="dark"] .sim-tab-inactive {
+  color: #94a3b8;
+}
+
+.sim-tab-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sim-tab-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11.5px;
+}
+
+.sim-tab-close {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+.sim-tab-new {
+  font-size: 14px;
+  color: #64748b;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.tab-bar-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-family: var(--font-family-mono);
+}
+
+.browser-tab-simulation[data-theme="light"] .tab-bar-address {
+  background: #ffffff;
+  color: #334155;
+  border-top: 1px solid #cbd5e1;
+}
+
+.browser-tab-simulation[data-theme="dark"] .tab-bar-address {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-top: 1px solid #334155;
+}
+
+.sim-address-lock {
+  font-size: 10px;
+}
+
+/* Favicon Sizes List */
+.favicon-sizes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.favicon-size-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: var(--color-bg-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.size-badge {
+  font-family: var(--font-family-mono);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--cn-green-700);
+  background: var(--cn-green-100);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] .size-badge {
+  color: var(--cn-green-300);
+  background: rgba(147, 199, 0, 0.15);
+}
+
+.size-desc {
+  color: var(--color-text-secondary);
+  font-size: 11.5px;
+}
+
+/* Ecosystem Brands Grid */
+.ecosystem-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.ecosystem-brand-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ecosystem-brand-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--cn-green-500);
+  box-shadow: var(--elevation-sm);
+}
+
+.ecosystem-brand-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  padding: var(--space-sm) 0;
+  margin-bottom: var(--space-md);
+}
+
+.ecosystem-brand-info {
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-sm);
+}
+
+.ecosystem-brand-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.ecosystem-brand-role {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.ecosystem-brand-node {
+  font-family: var(--font-family-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* ==========================================================================
    SYSTEM ICONOGRAPHY (FIGMA NODE 51:12627)
    ========================================================================== */
 

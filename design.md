@@ -20,7 +20,42 @@ The **CN Design System** is an enterprise-grade marketplace and business directo
 
 ---
 
-## 2. Color Palette & Design Tokens
+## 2. Brand Identity: Logo & Favicon System (Figma Frame `72:3759`)
+
+The visual signature of Connect Nigeria is anchored by its primary wordmark and responsive favicon emblem.
+
+### 2.1 Primary Brand Wordmark (`72:3762`)
+- **Figma Node:** `72:3762` (`image 17`, native `300 × 86 px`)
+- **Aspect Ratio:** `3.49 : 1`
+- **Asset File:** `logo.png`
+- **Color Composition:** Connect Green (`#008753`) + Brand Amber (`#ffb703`) + Deep Slate (`#0f172a`).
+- **Minimum Digital Clearance:** Clear space boundary `X` (equal to the diameter of the circular 'c') on all 4 sides.
+- **Minimum Digital Size:** Never scale below 120px width (Desktop) or 96px width (Mobile viewports).
+
+### 2.2 Official Emblem Favicon (`72:3761`)
+- **Figma Node:** `72:3761` (`image 16`, native `81 × 81 px`)
+- **Aspect Ratio:** `1 : 1`
+- **Asset File:** `favicon.png`
+- **Geometry:** Vibrant circular green 'C' enclosing an optical amber center dot.
+- **Standard Platform Targets:**
+  - Browser Tab: `16 × 16 px` & `32 × 32 px` (`favicon.png`)
+  - Apple iOS: `180 × 180 px` (`apple-touch-icon.png`)
+  - Android PWA: `192 × 192 px` & `512 × 512 px` (`webmanifest`)
+
+### 2.3 Ecosystem Brand Marks (Figma Frame `72:3759`)
+The Connect Nigeria design system governs 8 official sub-brands within the digital commerce network:
+1. **ConnectNigeria.com** (`72:3762`): Flagship business directory & commercial portal
+2. **ads.ng** (`72:3763`): Marketplace classified ads
+3. **Talent.ng** (`72:3764`): Verified recruitment & career directory
+4. **Connect CRM** (`72:3766`): Merchant relationship & sales CRM
+5. **Chops** (`370:931` & `410:24612`): Quick-service food & meal delivery network
+6. **MyConnects.com** (`72:3768`): Community business network
+7. **Nextdaysite** (`72:3770`): Turnkey web solutions for SMEs
+8. **Omume** (`72:3767`): Event ticketing & cultural experiences
+
+---
+
+## 3. Color Palette & Design Tokens
 
 ### 2.1 CN Green (Primary Brand Palette)
 The core brand signature used for primary CTAs, active states, confirmation badges, and focus rings.
