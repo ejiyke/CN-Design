@@ -59,32 +59,32 @@ The foundational slate/blue grayscale providing depth, typography contrast, and 
 
 | Token Name | Hex Code | RGB | Typical Application |
 | :--- | :--- | :--- | :--- |
-| `cn-blue-50` | `#eff1f4` | `rgb(239, 241, 244)` | Page background tint, secondary button fill, disabled controls |
-| `cn-blue-100` | `#e1e6ec` | `rgb(225, 230, 236)` | Standard component border (inputs, cards, dividers) |
-| `cn-blue-200` | `#c5ced9` | `rgb(197, 206, 217)` | Hover borders, active separators |
-| `cn-blue-300` | `#9baac0` | `rgb(155, 170, 192)` | Secondary icons, inactive pagination borders |
-| `cn-blue-400` | `#657996` | `rgb(101, 121, 150)` | Placeholder text, tertiary metadata, timestamps |
-| `cn-blue-500` | `#42526b` | `rgb(66, 82, 107)` | Buttons labels |
-| `cn-blue-600` | `#2d394d` | `rgb(45, 57, 77)` | Dark buttons, table headers, emphasized metadata |
-| `cn-blue-700` | `#1b2330` | `rgb(27, 35, 48)` | **Primary Text**: Headings, titles, prices, critical labels |
-| `cn-blue-800` | `#10151f` | `rgb(16, 21, 31)` | Deep text, high-emphasis icons |
-| `cn-blue-900` | `#0a0e14` | `rgb(10, 14, 20)` | Maximum contrast dark mode foundation |
+| `cn-blue-50` | `#e7e8ea` | `rgb(231, 232, 234)` | Page background tint, secondary button fill, disabled controls |
+| `cn-blue-100` | `#b5b7bd` | `rgb(181, 183, 189)` | Standard component border (inputs, cards, dividers) |
+| `cn-blue-200` | `#91949d` | `rgb(145, 148, 157)` | Hover borders, active separators |
+| `cn-blue-300` | `#5e6470` | `rgb(94, 100, 112)` | Secondary icons, inactive pagination borders |
+| `cn-blue-400` | `#3f4555` | `rgb(63, 69, 85)` | Placeholder text, tertiary metadata, timestamps |
+| `cn-blue-500` | `#0f172a` | `rgb(15, 23, 42)` | Buttons labels |
+| `cn-blue-600` | `#0e1526` | `rgb(14, 21, 38)` | Dark buttons, table headers, emphasized metadata |
+| `cn-blue-700` | `#0b101e` | `rgb(11, 16, 30)` | **Primary Text**: Headings, titles, prices, critical labels |
+| `cn-blue-800` | `#080d17` | `rgb(8, 13, 23)` | Deep text, high-emphasis icons |
+| `cn-blue-900` | `#060a12` | `rgb(6, 10, 18)` | Maximum contrast dark mode foundation |
 
 ### 2.4 CN White / Grayscale (Surfaces & Cards)
 
 | Token Name | Hex Code | RGB | Typical Application |
 | :--- | :--- | :--- | :--- |
 | `cn-white` | `#ffffff` | `rgb(255, 255, 255)` | Pure white card surfaces, modals, popovers |
-| `cn-white-50` | `#fbfbfb` | `rgb(251, 251, 251)` | Alternate row stripe, subtle background shift |
+| `cn-white-50` | `#fdfdfd` | `rgb(253, 253, 253)` | Alternate row stripe, subtle background shift |
 | `cn-white-100` | `#f7f7f7` | `rgb(247, 247, 247)` | Input field filled background |
 | `cn-white-200` | `#f4f4f4` | `rgb(244, 244, 244)` | Inactive toggle background, secondary tags |
 | `cn-white-300` | `#eeeeee` | `rgb(238, 238, 238)` | Light dividers |
-| `cn-white-400` | `#e6e6e6` | `rgb(230, 230, 230)` | Subtle outlines |
-| `cn-white-500` | `#dadada` | `rgb(218, 218, 218)` | Disabled borders |
-| `cn-white-600` | `#cccccc` | `rgb(204, 204, 204)` | Muted icon fills |
-| `cn-white-700` | `#a7a7a7` | `rgb(167, 167, 167)` | Inactive slider handles |
-| `cn-white-800` | `#7b7b7b` | `rgb(123, 123, 123)` | Secondary disabled text |
-| `cn-white-900` | `#434343` | `rgb(67, 67, 67)` | Deep neutral text |
+| `cn-white-400` | `#ebebeb` | `rgb(235, 235, 235)` | Subtle outlines |
+| `cn-white-500` | `#e6e6e6` | `rgb(230, 230, 230)` | Disabled borders |
+| `cn-white-600` | `#d1d1d1` | `rgb(209, 209, 209)` | Muted icon fills |
+| `cn-white-700` | `#a3a3a3` | `rgb(163, 163, 163)` | Inactive slider handles |
+| `cn-white-800` | `#7f7f7f` | `rgb(127, 127, 127)` | Secondary disabled text |
+| `cn-white-900` | `#616161` | `rgb(97, 97, 97)` | Deep neutral text |
 
 ### 2.5 Feedback & Semantic Status
 
@@ -362,31 +362,31 @@ Copy and paste the following CSS variable definitions into your root stylesheet 
   /* ============================================================
      CN BLUE / SLATE (NEUTRALS & TYPOGRAPHY)
      ============================================================ */
-  --cn-blue-50: #eff1f4;
-  --cn-blue-100: #e1e6ec; /* Default Border */
-  --cn-blue-200: #c5ced9;
-  --cn-blue-300: #9baac0;
-  --cn-blue-400: #657996; /* Muted Text / Placeholder */
-  --cn-blue-500: #42526b; /* Buttons Labels */
-  --cn-blue-600: #2d394d;
-  --cn-blue-700: #1b2330; /* Primary Text & Headings */
-  --cn-blue-800: #10151f;
-  --cn-blue-900: #0a0e14;
+  --cn-blue-50: #e7e8ea;
+  --cn-blue-100: #b5b7bd; /* Default Border */
+  --cn-blue-200: #91949d;
+  --cn-blue-300: #5e6470;
+  --cn-blue-400: #3f4555; /* Muted Text / Placeholder */
+  --cn-blue-500: #0f172a; /* Buttons Labels */
+  --cn-blue-600: #0e1526;
+  --cn-blue-700: #0b101e; /* Primary Text & Headings */
+  --cn-blue-800: #080d17;
+  --cn-blue-900: #060a12;
 
   /* ============================================================
      CN WHITE / NEUTRAL GRAYS
      ============================================================ */
   --cn-white: #ffffff;
-  --cn-white-50: #fbfbfb;
+  --cn-white-50: #fdfdfd;
   --cn-white-100: #f7f7f7;
   --cn-white-200: #f4f4f4;
   --cn-white-300: #eeeeee;
-  --cn-white-400: #e6e6e6;
-  --cn-white-500: #dadada;
-  --cn-white-600: #cccccc;
-  --cn-white-700: #a7a7a7;
-  --cn-white-800: #7b7b7b;
-  --cn-white-900: #434343;
+  --cn-white-400: #ebebeb;
+  --cn-white-500: #e6e6e6;
+  --cn-white-600: #d1d1d1;
+  --cn-white-700: #a3a3a3;
+  --cn-white-800: #7f7f7f;
+  --cn-white-900: #616161;
 
   /* ============================================================
      SEMANTIC FEEDBACK

@@ -173,6 +173,7 @@ function initCommandPalette() {
     { title: 'CN Green (Primary Brand Palette)', href: '#colors-green', cat: 'Foundations' },
     { title: 'CN Yellow / Amber Palette', href: '#colors-amber', cat: 'Foundations' },
     { title: 'CN Blue / Slate Palette', href: '#colors-slate', cat: 'Foundations' },
+    { title: 'CN White / Grayscale Palette', href: '#colors-white', cat: 'Foundations' },
     { title: 'Semantic Status Colors', href: '#colors-semantic', cat: 'Foundations' },
     { title: 'Typography Scale (Archivo)', href: '#typography', cat: 'Foundations' },
     { title: 'Elevation & Shadows', href: '#elevation', cat: 'Foundations' },

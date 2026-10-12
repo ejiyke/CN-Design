@@ -38,31 +38,31 @@
   /* ==========================================================================
      CN BLUE / SLATE (NEUTRALS & TYPOGRAPHY FOUNDATIONS)
      ========================================================================== */
-  --cn-blue-50: #eff1f4;
-  --cn-blue-100: #e1e6ec; /* Standard component border */
-  --cn-blue-200: #c5ced9;
-  --cn-blue-300: #9baac0;
-  --cn-blue-400: #657996; /* Placeholder text & secondary metadata */
-  --cn-blue-500: #42526b; /* Subtitles & secondary labels */
-  --cn-blue-600: #2d394d;
-  --cn-blue-700: #1b2330; /* Primary text, headings & high-contrast prices */
-  --cn-blue-800: #10151f;
-  --cn-blue-900: #0a0e14;
+  --cn-blue-50: #e7e8ea;
+  --cn-blue-100: #b5b7bd; /* Standard component border */
+  --cn-blue-200: #91949d;
+  --cn-blue-300: #5e6470;
+  --cn-blue-400: #3f4555; /* Placeholder text & secondary metadata */
+  --cn-blue-500: #0f172a; /* Subtitles & secondary labels */
+  --cn-blue-600: #0e1526;
+  --cn-blue-700: #0b101e; /* Primary text, headings & high-contrast prices */
+  --cn-blue-800: #080d17;
+  --cn-blue-900: #060a12;
 
   /* ==========================================================================
      CN WHITE & GRAYSCALE (SURFACES & CONTAINERS)
      ========================================================================== */
   --cn-white: #ffffff;
-  --cn-white-50: #fbfbfb;
+  --cn-white-50: #fdfdfd;
   --cn-white-100: #f7f7f7;
   --cn-white-200: #f4f4f4;
   --cn-white-300: #eeeeee;
-  --cn-white-400: #e6e6e6;
-  --cn-white-500: #dadada;
-  --cn-white-600: #cccccc;
-  --cn-white-700: #a7a7a7;
-  --cn-white-800: #7b7b7b;
-  --cn-white-900: #434343;
+  --cn-white-400: #ebebeb;
+  --cn-white-500: #e6e6e6;
+  --cn-white-600: #d1d1d1;
+  --cn-white-700: #a3a3a3;
+  --cn-white-800: #7f7f7f;
+  --cn-white-900: #616161;
 
   /* ==========================================================================
      SEMANTIC FEEDBACK & STATUS TOKENS
