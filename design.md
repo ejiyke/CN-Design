@@ -255,18 +255,19 @@ The CN Design System icon library comprises **1,170+ standardized vector outline
   - `180 × 180 px`: Apple Touch Icon (`<link rel="apple-touch-icon">`)
   - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
 
-### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759`)
-| Brand / Sub-Domain | Figma Node | Domain Purpose | Status in Portal |
-| :--- | :--- | :--- | :--- |
-| **ConnectNigeria.com** | `72:3762` | Core Business Directory & Marketplace | Active Wordmark |
-| **Connect Nigeria Favicon** | `72:3761` | Browser Tab & App Icon Symbol | Active Favicon |
-| **ads.ng** | `72:3763` | Digital Advertising & Classified Promotion | Documented Ecosystem Brand |
-| **talent.ng** | `72:3764` | Verified Talent & Freelance Marketplace | Documented Ecosystem Brand |
-| **Connect CRM** | `72:3766` | Merchant Lead & Client Relationship Management | Documented Ecosystem Brand |
-| **Omume** | `72:3767` | Social Experience & Event Ticketing | Documented Ecosystem Brand |
-| **MyConnects.com** | `72:3768` | B2B Business Networking & Connectors | Documented Ecosystem Brand |
-| **Nextdaysite** | `72:3770` | Fast Turnaround Digital Web Services | Documented Ecosystem Brand |
-| **Chops** | `370:931` | Finger-Food & Gourmet Catering Marketplace | Documented Ecosystem Brand |
+### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759: Logos`)
+All 8 ecosystem brand logos and available favicons have been directly extracted via Figma MCP and stored in `assets/brands/`. Brands without a standalone favicon in Figma are explicitly designated with an empty favicon slot.
+
+| Brand / Sub-Domain | Figma Node(s) | Logo Asset | Favicon Asset | Status in Portal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Connect Nigeria** | `72:3762` / `72:3761` | `assets/brands/connectnigeria-logo.png` (`300×86`) | `assets/brands/connectnigeria-favicon.png` (`81×81`) | **Logo & Favicon Active** |
+| **MyConnects.com** | `422:21157` / `422:21158` | `assets/brands/myconnects-logo.png` (`900×498`) | `assets/brands/myconnects-favicon.png` (`129×144`) | **Logo & Favicon Active** |
+| **Chops** | `370:931` / `422:21142` | `assets/brands/chops-logo.png` (`283×104`) | `assets/brands/chops-favicon.png` (`111×115`) | **Logo & Favicon Active** |
+| **Ads.ng** | `422:21162` | `assets/brands/ads-ng-logo.png` (`163×65`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **Talent.ng** | `422:21161` | `assets/brands/talent-ng-logo.png` (`180×137`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **Connect CRM** | `422:21160` | `assets/brands/connect-crm-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **Omume** | `422:21159` | `assets/brands/omume-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **Next Day Site** | `422:21156` | `assets/brands/nextdaysite-logo.png` (`751×198`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 
 ---
 

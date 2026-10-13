@@ -828,4 +828,64 @@ function initBrandIdentity() {
       }
     });
   }
+
+  // Multi-brand portfolio filters (All, With Favicon, Logo Only)
+  const filterPills = document.querySelectorAll('#brand-filter-pills .brand-filter-pill');
+  const brandCards = document.querySelectorAll('.brand-portfolio-card');
+  
+  if (filterPills.length && brandCards.length) {
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const filter = pill.dataset.filter;
+        
+        brandCards.forEach(card => {
+          const hasFav = card.dataset.hasFavicon === 'true';
+          if (filter === 'all') {
+            card.style.display = 'flex';
+          } else if (filter === 'has-favicon') {
+            card.style.display = hasFav ? 'flex' : 'none';
+          } else if (filter === 'logo-only') {
+            card.style.display = !hasFav ? 'flex' : 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // Multi-brand canvas surface background toggles (Light, Dark, Checkered)
+  const surfaceToggles = document.querySelectorAll('#brand-surface-toggles .icon-pill-btn');
+  const ecosystemCanvasBoxes = document.querySelectorAll('.multi-brand-grid .brand-canvas-box');
+  
+  if (surfaceToggles.length && ecosystemCanvasBoxes.length) {
+    surfaceToggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        surfaceToggles.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const bg = btn.dataset.bg;
+        ecosystemCanvasBoxes.forEach(box => {
+          box.className = `brand-canvas-box ${bg}-bg`;
+        });
+      });
+    });
+  }
+
+  // Multi-brand Copy Tag buttons
+  document.querySelectorAll('.copy-brand-tag-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.src;
+      const name = btn.dataset.name;
+      const snippet = `<img src="${src}" alt="${name} Logo" loading="lazy" />`;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(snippet).then(() => {
+          showToast(`Copied ${name} <img> tag to clipboard!`, 'success');
+        }).catch(() => {
+          showToast(`Copied ${name} <img> tag to clipboard!`, 'success');
+        });
+      } else {
+        showToast(`Copied ${name} <img> tag to clipboard!`, 'success');
+      }
+    });
+  });
 }
