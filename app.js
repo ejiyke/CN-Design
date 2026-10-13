@@ -172,7 +172,7 @@ function initCommandPalette() {
 
   const navItems = [
     { title: 'Overview & Philosophy', href: '#overview', cat: 'Introduction' },
-    { title: 'Logo & Favicon (Official Assets)', href: '#brand-identity', cat: 'Foundations' },
+    { title: 'Logos & Favicons (Official Assets)', href: '#brand-identity', cat: 'Foundations' },
     { title: 'CN Green (Primary Brand Palette)', href: '#colors-green', cat: 'Foundations' },
     { title: 'CN Yellow / Amber Palette', href: '#colors-amber', cat: 'Foundations' },
     { title: 'CN Blue / Slate Palette', href: '#colors-slate', cat: 'Foundations' },
@@ -761,13 +761,28 @@ function initIconExplorer() {
 }
 
 /* ==========================================================================
-   15. BRAND IDENTITY (LOGOS & FAVICON - FIGMA FRAME 72:3759)
+   15. BRAND IDENTITY (LOGOS & FAVICONS - FIGMA FRAME 72:3759)
    ========================================================================== */
 
 function initBrandIdentity() {
-  // Tab simulation theme toggle
+  // Logo canvas background toggles (Light, Dark, Checkered)
+  const logoCanvas = document.getElementById('logo-canvas-preview');
+  const logoToggles = document.querySelectorAll('#logo-theme-toggles .icon-pill-btn');
+  
+  if (logoCanvas && logoToggles.length) {
+    logoToggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        logoToggles.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const bg = btn.dataset.bg;
+        logoCanvas.className = `brand-canvas-preview ${bg}-bg`;
+      });
+    });
+  }
+
+  // Browser tab simulation theme toggle (Light Tab, Dark Tab)
   const tabSim = document.getElementById('browser-tab-simulation');
-  const tabToggles = document.querySelectorAll('#tab-sim-toggles .icon-pill-btn');
+  const tabToggles = document.querySelectorAll('#tab-theme-toggles .icon-pill-btn');
   
   if (tabSim && tabToggles.length) {
     tabToggles.forEach(btn => {
@@ -780,7 +795,7 @@ function initBrandIdentity() {
     });
   }
 
-  // Copy Logo HTML snippet
+  // Copy Logo HTML <img> snippet
   const copyLogoBtn = document.querySelector('.copy-logo-html-btn');
   if (copyLogoBtn) {
     copyLogoBtn.addEventListener('click', () => {
@@ -797,7 +812,7 @@ function initBrandIdentity() {
     });
   }
 
-  // Copy Favicon link tag
+  // Copy Favicon <link> tags snippet
   const copyFaviconBtn = document.querySelector('.copy-favicon-link-btn');
   if (copyFaviconBtn) {
     copyFaviconBtn.addEventListener('click', () => {

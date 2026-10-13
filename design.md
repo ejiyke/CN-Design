@@ -20,38 +20,43 @@ The **CN Design System** is an enterprise-grade marketplace and business directo
 
 ---
 
-## 2. Brand Identity: Logo & Favicon System (Figma Frame `72:3759`)
+## 2. Brand Identity: Logos & Favicons (Figma Frame `72:3759`)
 
-The visual signature of Connect Nigeria is anchored by its primary wordmark and responsive favicon emblem.
+### 2.1 Primary Brand Wordmark
+- **Master Asset:** `logo.png`
+- **Figma Node:** `72:3762` (`image 17`)
+- **Native Dimensions:** `300 × 86 px` (Aspect ratio: `3.49:1`)
+- **Color Composition:**
+  - `CN Green` (`#93C700` / `#008753`) for lowercase wordmark letterforms (`c`, `n`, `n`, `e`, `c`, `t`)
+  - `CN Orange / Amber` (`#E49146` / `#FF7A00`) for the inner disc of the leading `c`
+  - `CN Blue / Dark Slate` (`#0F172A`) for the secondary sub-descriptor `NIGERIA.com`
+- **Clearspace Rule:** Minimum `16px` on all boundaries (calibrated to the height of the inner orange disc).
+- **Minimum Sizing:** `120px` width on desktop navigation headers; `96px` width on mobile viewports.
 
-### 2.1 Primary Brand Wordmark (`72:3762`)
-- **Figma Node:** `72:3762` (`image 17`, native `300 × 86 px`)
-- **Aspect Ratio:** `3.49 : 1`
-- **Asset File:** `logo.png`
-- **Color Composition:** Connect Green (`#008753`) + Brand Amber (`#ffb703`) + Deep Slate (`#0f172a`).
-- **Minimum Digital Clearance:** Clear space boundary `X` (equal to the diameter of the circular 'c') on all 4 sides.
-- **Minimum Digital Size:** Never scale below 120px width (Desktop) or 96px width (Mobile viewports).
+### 2.2 Official Favicon & App Icon
+- **Master Asset:** `favicon.png`
+- **Figma Node:** `72:3761` (`image 16`)
+- **Native Dimensions:** `81 × 81 px` square vector/raster symbol.
+- **Key Visual:** Vibrant CN Green outer concentric 'C' ring enclosing an energetic orange central core disc.
+- **Resolution Matrix:**
+  - `16 × 16 px`: Standard desktop browser tab favicon
+  - `32 × 32 px`: High-DPI / Retina desktop browser tab
+  - `48 × 48 px`: Windows taskbar & bookmark bar
+  - `180 × 180 px`: Apple Touch Icon (`<link rel="apple-touch-icon">`)
+  - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
 
-### 2.2 Official Emblem Favicon (`72:3761`)
-- **Figma Node:** `72:3761` (`image 16`, native `81 × 81 px`)
-- **Aspect Ratio:** `1 : 1`
-- **Asset File:** `favicon.png`
-- **Geometry:** Vibrant circular green 'C' enclosing an optical amber center dot.
-- **Standard Platform Targets:**
-  - Browser Tab: `16 × 16 px` & `32 × 32 px` (`favicon.png`)
-  - Apple iOS: `180 × 180 px` (`apple-touch-icon.png`)
-  - Android PWA: `192 × 192 px` & `512 × 512 px` (`webmanifest`)
-
-### 2.3 Ecosystem Brand Marks (Figma Frame `72:3759`)
-The Connect Nigeria design system governs 8 official sub-brands within the digital commerce network:
-1. **ConnectNigeria.com** (`72:3762`): Flagship business directory & commercial portal
-2. **ads.ng** (`72:3763`): Marketplace classified ads
-3. **Talent.ng** (`72:3764`): Verified recruitment & career directory
-4. **Connect CRM** (`72:3766`): Merchant relationship & sales CRM
-5. **Chops** (`370:931` & `410:24612`): Quick-service food & meal delivery network
-6. **MyConnects.com** (`72:3768`): Community business network
-7. **Nextdaysite** (`72:3770`): Turnkey web solutions for SMEs
-8. **Omume** (`72:3767`): Event ticketing & cultural experiences
+### 2.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759`)
+| Brand / Sub-Domain | Figma Node | Domain Purpose | Status in Portal |
+| :--- | :--- | :--- | :--- |
+| **ConnectNigeria.com** | `72:3762` | Core Business Directory & Marketplace | Active Wordmark |
+| **Connect Nigeria Favicon** | `72:3761` | Browser Tab & App Icon Symbol | Active Favicon |
+| **ads.ng** | `72:3763` | Digital Advertising & Classified Promotion | Documented Ecosystem Brand |
+| **talent.ng** | `72:3764` | Verified Talent & Freelance Marketplace | Documented Ecosystem Brand |
+| **Connect CRM** | `72:3766` | Merchant Lead & Client Relationship Management | Documented Ecosystem Brand |
+| **Omume** | `72:3767` | Social Experience & Event Ticketing | Documented Ecosystem Brand |
+| **MyConnects.com** | `72:3768` | B2B Business Networking & Connectors | Documented Ecosystem Brand |
+| **Nextdaysite** | `72:3770` | Fast Turnaround Digital Web Services | Documented Ecosystem Brand |
+| **Chops** | `370:931` | Finger-Food & Gourmet Catering Marketplace | Documented Ecosystem Brand |
 
 ---
 
