@@ -255,8 +255,8 @@ The CN Design System icon library comprises **1,170+ standardized vector outline
   - `180 × 180 px`: Apple Touch Icon (`<link rel="apple-touch-icon">`)
   - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
 
-### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759: Logos`)
-All 8 ecosystem brand logos and available favicons have been directly extracted via Figma MCP and stored in `assets/brands/`. Brands without a standalone favicon in Figma are explicitly designated with an empty favicon slot.
+### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759: Logos` & Node `424:21165`)
+All 9 ecosystem brand logos and available favicons have been directly extracted via Figma MCP and stored in `assets/brands/`. Brands without a standalone favicon in Figma are explicitly designated with an empty favicon slot.
 
 | Brand / Sub-Domain | Figma Node(s) | Logo Asset | Favicon Asset | Status in Portal |
 | :--- | :--- | :--- | :--- | :--- |
@@ -268,6 +268,7 @@ All 8 ecosystem brand logos and available favicons have been directly extracted 
 | **Connect CRM** | `422:21160` | `assets/brands/connect-crm-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **Omume** | `422:21159` | `assets/brands/omume-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **Next Day Site** | `422:21156` | `assets/brands/nextdaysite-logo.png` (`751×198`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **CN Squad** | `424:21165` | `assets/brands/cn-squad-logo.png` (`231×90`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 
 ---
 
