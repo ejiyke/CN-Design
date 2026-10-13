@@ -75,7 +75,6 @@
           Foundations (Page 1)
         </div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="#brand-identity" class="nav-link">Logos & Favicons <span class="nav-link-badge">Official</span></a></li>
           <li class="nav-item"><a href="#colors-green" class="nav-link">CN Green (Primary)</a></li>
           <li class="nav-item"><a href="#colors-amber" class="nav-link">CN Yellow / Amber</a></li>
           <li class="nav-item"><a href="#colors-slate" class="nav-link">CN Blue / Slate</a></li>
@@ -86,6 +85,7 @@
           <li class="nav-item"><a href="#spacing" class="nav-link">Spacing & Radius</a></li>
           <li class="nav-item"><a href="#grid" class="nav-link">Responsive Grids</a></li>
           <li class="nav-item"><a href="#icons" class="nav-link">System Icons <span class="nav-link-badge">1,170+ Lib</span></a></li>
+          <li class="nav-item"><a href="#brand-identity" class="nav-link">Logos & Favicons <span class="nav-link-badge">Official</span></a></li>
         </ul>
       </div>
 
@@ -244,255 +244,8 @@
       </section>
 
       <!-- ====================================================================
-           PAGE 1: FOUNDATIONS (LOGOS, COLORS, TYPOGRAPHY, ELEVATION, SPACING)
+           PAGE 1: FOUNDATIONS (COLORS, TYPOGRAPHY, ELEVATION, SPACING, GRIDS, ICONS, LOGOS)
            ==================================================================== -->
-
-      <!-- --- Official Logos & Favicons Section --- -->
-      <section class="ds-section" id="brand-identity">
-        <div class="section-header">
-          <div class="section-tag">Foundations • Brand Identity (Figma Frame 72:3759)</div>
-          <h2 class="section-title">Logos & Favicons</h2>
-          <p class="section-desc">
-            The official master identity assets for Connect Nigeria and its business directory ecosystem. Calibrated for high-visibility UI headers, responsive navigation rails, dark mode surfaces, and browser favicon manifests.
-          </p>
-        </div>
-
-        <!-- Master Assets Grid (Logo Card + Favicon Card) -->
-        <div class="brand-assets-grid">
-          
-          <!-- Card 1: Primary Wordmark Logo -->
-          <div class="brand-asset-card">
-            <div class="brand-card-header">
-              <div class="brand-card-title-group">
-                <span class="brand-card-title">Primary Brand Wordmark</span>
-                <span class="showcase-badge" style="background: var(--cn-green-100); color: var(--cn-green-800);">Official Vector Master</span>
-              </div>
-              <div class="brand-preview-toggles" id="logo-theme-toggles">
-                <button class="icon-pill-btn active" data-bg="light">Light</button>
-                <button class="icon-pill-btn" data-bg="dark">Dark</button>
-                <button class="icon-pill-btn" data-bg="grid">Checkered</button>
-              </div>
-            </div>
-
-            <!-- Visual Canvas Preview -->
-            <div class="brand-canvas-preview light-bg" id="logo-canvas-preview">
-              <img src="logo.png" alt="Connect Nigeria Official Wordmark Logo" class="brand-master-logo" id="brand-master-logo" />
-            </div>
-
-            <!-- Asset Specifications -->
-            <div class="brand-asset-specs">
-              <div class="spec-row">
-                <span class="spec-label">Native Dimensions:</span>
-                <span class="spec-value">300 × 86 px (3.49:1 Aspect Ratio)</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Minimum Safe Size:</span>
-                <span class="spec-value">120px (Desktop Navigation) / 96px (Mobile Header)</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Brand Color Tokens:</span>
-                <div class="spec-color-chips">
-                  <span class="spec-chip" style="background: #93c700; color: #000;">CN Green (#93C700)</span>
-                  <span class="spec-chip" style="background: #e49146; color: #fff;">CN Orange (#E49146)</span>
-                  <span class="spec-chip" style="background: #0f172a; color: #fff;">Slate (#0F172A)</span>
-                </div>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Clearspace Rule:</span>
-                <span class="spec-value">16px minimum boundary margin based on the inner 'c' dot height</span>
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="brand-card-actions">
-              <a href="logo.png" download="connect-nigeria-logo.png" class="btn btn-primary btn-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                Download Logo (PNG)
-              </a>
-              <button class="btn btn-secondary btn-sm copy-logo-html-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="13" height="13" x="9" y="9" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                Copy &lt;img&gt; Tag
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 2: Official Favicon & App Icon -->
-          <div class="brand-asset-card">
-            <div class="brand-card-header">
-              <div class="brand-card-title-group">
-                <span class="brand-card-title">Official Favicon & App Icon</span>
-                <span class="showcase-badge" style="background: var(--cn-yellow-light); color: var(--cn-yellow-dark);">Multi-Resolution</span>
-              </div>
-              <div class="brand-preview-toggles" id="tab-theme-toggles">
-                <button class="icon-pill-btn active" data-tab-theme="light">Light Tab</button>
-                <button class="icon-pill-btn" data-tab-theme="dark">Dark Tab</button>
-              </div>
-            </div>
-
-            <!-- Simulated Browser Tab Preview -->
-            <div class="browser-tab-simulation" id="browser-tab-simulation" data-theme="light">
-              <div class="browser-chrome-bar">
-                <div class="browser-window-dots">
-                  <span class="win-dot close"></span>
-                  <span class="win-dot min"></span>
-                  <span class="win-dot max"></span>
-                </div>
-                <div class="browser-tab active-tab">
-                  <img src="favicon.png" alt="Favicon" class="tab-favicon-img" />
-                  <span class="tab-title-text">Connect Nigeria | #1 Business Directory</span>
-                  <span class="tab-close-x">✕</span>
-                </div>
-                <div class="browser-newtab-btn">+</div>
-              </div>
-            </div>
-
-            <!-- Sizing Matrix Display -->
-            <div class="favicon-size-matrix">
-              <div class="matrix-item">
-                <div class="matrix-box" style="width: 28px; height: 28px;">
-                  <img src="favicon.png" alt="16px" style="width: 16px; height: 16px;" />
-                </div>
-                <div class="matrix-name">16 × 16 px</div>
-                <div class="matrix-desc">Standard Browser Tab</div>
-              </div>
-              <div class="matrix-item">
-                <div class="matrix-box" style="width: 44px; height: 44px;">
-                  <img src="favicon.png" alt="32px" style="width: 32px; height: 32px;" />
-                </div>
-                <div class="matrix-name">32 × 32 px</div>
-                <div class="matrix-desc">Retina Browser Tab</div>
-              </div>
-              <div class="matrix-item">
-                <div class="matrix-box" style="width: 60px; height: 60px;">
-                  <img src="favicon.png" alt="48px" style="width: 48px; height: 48px;" />
-                </div>
-                <div class="matrix-name">48 × 48 px</div>
-                <div class="matrix-desc">Windows Shortcut / PWA</div>
-              </div>
-              <div class="matrix-item">
-                <div class="matrix-box" style="width: 76px; height: 76px;">
-                  <img src="favicon.png" alt="180px" style="width: 64px; height: 64px; border-radius: 12px;" />
-                </div>
-                <div class="matrix-name">180 × 180 px</div>
-                <div class="matrix-desc">Apple Touch Icon</div>
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="brand-card-actions">
-              <a href="favicon.png" download="favicon.png" class="btn btn-primary btn-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                Download Favicon
-              </a>
-              <button class="btn btn-secondary btn-sm copy-favicon-link-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="13" height="13" x="9" y="9" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                Copy &lt;link&gt; Tags
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ecosystem & Sub-Brands (Figma Frame 72:3759) -->
-        <div class="brand-ecosystem-section">
-          <div class="ecosystem-header">
-            <div>
-              <h3 style="font-size: 18px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 4px;">Marketplace Ecosystem Brands</h3>
-              <p style="font-size: 13px; color: var(--color-text-muted);">Related brand identities specified in Figma Frame <code>72:3759: Logos</code>.</p>
-            </div>
-            <span class="icon-hint-badge">Figma Frame 72:3759</span>
-          </div>
-
-          <div class="ecosystem-grid">
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge active">Core Directory</div>
-              <div class="eco-brand-name">ConnectNigeria.com</div>
-              <div class="eco-brand-desc">Nigeria's premier business search and verification directory.</div>
-              <div class="eco-brand-status">● Primary Wordmark Active</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Advertising</div>
-              <div class="eco-brand-name">ads.ng</div>
-              <div class="eco-brand-desc">Digital classifieds, promotional campaigns, and marketplace ads.</div>
-              <div class="eco-brand-status">Figma Node: 72:3763</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Talent & Work</div>
-              <div class="eco-brand-name">talent.ng</div>
-              <div class="eco-brand-desc">Freelance job network and verified professional recruitment.</div>
-              <div class="eco-brand-status">Figma Node: 72:3764</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Enterprise CRM</div>
-              <div class="eco-brand-name">Connect CRM</div>
-              <div class="eco-brand-desc">Customer relationship and merchant lead management tools.</div>
-              <div class="eco-brand-status">Figma Node: 72:3766</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Events Platform</div>
-              <div class="eco-brand-name">Omume</div>
-              <div class="eco-brand-desc">Social event ticketing, business summits, and community gatherings.</div>
-              <div class="eco-brand-status">Figma Node: 72:3767</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Networking</div>
-              <div class="eco-brand-name">MyConnects.com</div>
-              <div class="eco-brand-desc">Business networking hub and B2B directory interconnectivity.</div>
-              <div class="eco-brand-status">Figma Node: 72:3768</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Web Solutions</div>
-              <div class="eco-brand-name">Nextdaysite</div>
-              <div class="eco-brand-desc">High-speed turnkey business website and digital presence creation.</div>
-              <div class="eco-brand-status">Figma Node: 72:3770</div>
-            </div>
-            <div class="ecosystem-card">
-              <div class="eco-brand-badge">Catering & Food</div>
-              <div class="eco-brand-name">Chops</div>
-              <div class="eco-brand-desc">Nigerian finger-foods, gourmet snacks, and catering marketplace.</div>
-              <div class="eco-brand-status">Figma Node: 370:931</div>
-            </div>
-          </div>
-
-          <div class="ecosystem-note-banner">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cn-green-600); flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
-            <div>
-              <strong>Asset Note:</strong> Connect Nigeria's master wordmark and favicon are loaded directly from the project bundle. To export the additional sub-brand logos directly from Figma Dev Mode, add the project folder to allowed directories in Figma (MCP panel &gt; Allowed directories) or drop them into the repository.
-            </div>
-          </div>
-        </div>
-
-        <!-- Brand Usage Guidelines (Do's & Don'ts) -->
-        <div class="brand-rules-grid">
-          <div class="rule-card rule-do">
-            <div class="rule-header">
-              <span class="rule-icon">✓</span>
-              <span class="rule-title">Do: Maintain Contrast</span>
-            </div>
-            <p class="rule-text">Place the logo over clean white, light gray (<code>#F7F7F7</code>), or deep slate backgrounds (<code>#0F172A</code>) to ensure maximum readability.</p>
-          </div>
-          <div class="rule-card rule-do">
-            <div class="rule-header">
-              <span class="rule-icon">✓</span>
-              <span class="rule-title">Do: Preserve Proportions</span>
-            </div>
-            <p class="rule-text">Always scale the wordmark and favicon proportionally. Never adjust horizontal or vertical scale independently.</p>
-          </div>
-          <div class="rule-card rule-dont">
-            <div class="rule-header">
-              <span class="rule-icon">✕</span>
-              <span class="rule-title">Don't: Alter Brand Colors</span>
-            </div>
-            <p class="rule-text">Do not recolor the green letters, orange dot, or dark text. Brand recognition relies on exact chromatic consistency.</p>
-          </div>
-          <div class="rule-card rule-dont">
-            <div class="rule-header">
-              <span class="rule-icon">✕</span>
-              <span class="rule-title">Don't: Crowd Clearspace</span>
-            </div>
-            <p class="rule-text">Do not place buttons, text, or conflicting graphics within the 16px clearspace perimeter around the logo boundary.</p>
-          </div>
-        </div>
-      </section>
 
       <!-- --- CN Green Palette --- -->
       <section class="ds-section" id="colors-green">
@@ -1280,6 +1033,253 @@
   &lt;circle cx="19" cy="21" r="1" /&gt;
   &lt;path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /&gt;
 &lt;/svg&gt;</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Official Logos & Favicons Section --- -->
+      <section class="ds-section" id="brand-identity">
+        <div class="section-header">
+          <div class="section-tag">Foundations • Brand Identity (Figma Frame 72:3759)</div>
+          <h2 class="section-title">Logos & Favicons</h2>
+          <p class="section-desc">
+            The official master identity assets for Connect Nigeria and its business directory ecosystem. Calibrated for high-visibility UI headers, responsive navigation rails, dark mode surfaces, and browser favicon manifests.
+          </p>
+        </div>
+
+        <!-- Master Assets Grid (Logo Card + Favicon Card) -->
+        <div class="brand-assets-grid">
+          
+          <!-- Card 1: Primary Wordmark Logo -->
+          <div class="brand-asset-card">
+            <div class="brand-card-header">
+              <div class="brand-card-title-group">
+                <span class="brand-card-title">Primary Brand Wordmark</span>
+                <span class="showcase-badge" style="background: var(--cn-green-100); color: var(--cn-green-800);">Official Vector Master</span>
+              </div>
+              <div class="brand-preview-toggles" id="logo-theme-toggles">
+                <button class="icon-pill-btn active" data-bg="light">Light</button>
+                <button class="icon-pill-btn" data-bg="dark">Dark</button>
+                <button class="icon-pill-btn" data-bg="grid">Checkered</button>
+              </div>
+            </div>
+
+            <!-- Visual Canvas Preview -->
+            <div class="brand-canvas-preview light-bg" id="logo-canvas-preview">
+              <img src="logo.png" alt="Connect Nigeria Official Wordmark Logo" class="brand-master-logo" id="brand-master-logo" />
+            </div>
+
+            <!-- Asset Specifications -->
+            <div class="brand-asset-specs">
+              <div class="spec-row">
+                <span class="spec-label">Native Dimensions:</span>
+                <span class="spec-value">300 × 86 px (3.49:1 Aspect Ratio)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Minimum Safe Size:</span>
+                <span class="spec-value">120px (Desktop Navigation) / 96px (Mobile Header)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Brand Color Tokens:</span>
+                <div class="spec-color-chips">
+                  <span class="spec-chip" style="background: #93c700; color: #000;">CN Green (#93C700)</span>
+                  <span class="spec-chip" style="background: #e49146; color: #fff;">CN Orange (#E49146)</span>
+                  <span class="spec-chip" style="background: #0f172a; color: #fff;">Slate (#0F172A)</span>
+                </div>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Clearspace Rule:</span>
+                <span class="spec-value">16px minimum boundary margin based on the inner 'c' dot height</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="brand-card-actions">
+              <a href="logo.png" download="connect-nigeria-logo.png" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Download Logo (PNG)
+              </a>
+              <button class="btn btn-secondary btn-sm copy-logo-html-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="13" height="13" x="9" y="9" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy &lt;img&gt; Tag
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Official Favicon & App Icon -->
+          <div class="brand-asset-card">
+            <div class="brand-card-header">
+              <div class="brand-card-title-group">
+                <span class="brand-card-title">Official Favicon & App Icon</span>
+                <span class="showcase-badge" style="background: var(--cn-yellow-light); color: var(--cn-yellow-dark);">Multi-Resolution</span>
+              </div>
+              <div class="brand-preview-toggles" id="tab-theme-toggles">
+                <button class="icon-pill-btn active" data-tab-theme="light">Light Tab</button>
+                <button class="icon-pill-btn" data-tab-theme="dark">Dark Tab</button>
+              </div>
+            </div>
+
+            <!-- Simulated Browser Tab Preview -->
+            <div class="browser-tab-simulation" id="browser-tab-simulation" data-theme="light">
+              <div class="browser-chrome-bar">
+                <div class="browser-window-dots">
+                  <span class="win-dot close"></span>
+                  <span class="win-dot min"></span>
+                  <span class="win-dot max"></span>
+                </div>
+                <div class="browser-tab active-tab">
+                  <img src="favicon.png" alt="Favicon" class="tab-favicon-img" />
+                  <span class="tab-title-text">Connect Nigeria | #1 Business Directory</span>
+                  <span class="tab-close-x">✕</span>
+                </div>
+                <div class="browser-newtab-btn">+</div>
+              </div>
+            </div>
+
+            <!-- Sizing Matrix Display -->
+            <div class="favicon-size-matrix">
+              <div class="matrix-item">
+                <div class="matrix-box" style="width: 28px; height: 28px;">
+                  <img src="favicon.png" alt="16px" style="width: 16px; height: 16px;" />
+                </div>
+                <div class="matrix-name">16 × 16 px</div>
+                <div class="matrix-desc">Standard Browser Tab</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-box" style="width: 44px; height: 44px;">
+                  <img src="favicon.png" alt="32px" style="width: 32px; height: 32px;" />
+                </div>
+                <div class="matrix-name">32 × 32 px</div>
+                <div class="matrix-desc">Retina Browser Tab</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-box" style="width: 60px; height: 60px;">
+                  <img src="favicon.png" alt="48px" style="width: 48px; height: 48px;" />
+                </div>
+                <div class="matrix-name">48 × 48 px</div>
+                <div class="matrix-desc">Windows Shortcut / PWA</div>
+              </div>
+              <div class="matrix-item">
+                <div class="matrix-box" style="width: 76px; height: 76px;">
+                  <img src="favicon.png" alt="180px" style="width: 64px; height: 64px; border-radius: 12px;" />
+                </div>
+                <div class="matrix-name">180 × 180 px</div>
+                <div class="matrix-desc">Apple Touch Icon</div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="brand-card-actions">
+              <a href="favicon.png" download="favicon.png" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Download Favicon
+              </a>
+              <button class="btn btn-secondary btn-sm copy-favicon-link-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="13" height="13" x="9" y="9" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy &lt;link&gt; Tags
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ecosystem & Sub-Brands (Figma Frame 72:3759) -->
+        <div class="brand-ecosystem-section">
+          <div class="ecosystem-header">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 4px;">Marketplace Ecosystem Brands</h3>
+              <p style="font-size: 13px; color: var(--color-text-muted);">Related brand identities specified in Figma Frame <code>72:3759: Logos</code>.</p>
+            </div>
+            <span class="icon-hint-badge">Figma Frame 72:3759</span>
+          </div>
+
+          <div class="ecosystem-grid">
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge active">Core Directory</div>
+              <div class="eco-brand-name">ConnectNigeria.com</div>
+              <div class="eco-brand-desc">Nigeria's premier business search and verification directory.</div>
+              <div class="eco-brand-status">● Primary Wordmark Active</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Advertising</div>
+              <div class="eco-brand-name">ads.ng</div>
+              <div class="eco-brand-desc">Digital classifieds, promotional campaigns, and marketplace ads.</div>
+              <div class="eco-brand-status">Figma Node: 72:3763</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Talent & Work</div>
+              <div class="eco-brand-name">talent.ng</div>
+              <div class="eco-brand-desc">Freelance job network and verified professional recruitment.</div>
+              <div class="eco-brand-status">Figma Node: 72:3764</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Enterprise CRM</div>
+              <div class="eco-brand-name">Connect CRM</div>
+              <div class="eco-brand-desc">Customer relationship and merchant lead management tools.</div>
+              <div class="eco-brand-status">Figma Node: 72:3766</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Events Platform</div>
+              <div class="eco-brand-name">Omume</div>
+              <div class="eco-brand-desc">Social event ticketing, business summits, and community gatherings.</div>
+              <div class="eco-brand-status">Figma Node: 72:3767</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Networking</div>
+              <div class="eco-brand-name">MyConnects.com</div>
+              <div class="eco-brand-desc">Business networking hub and B2B directory interconnectivity.</div>
+              <div class="eco-brand-status">Figma Node: 72:3768</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Web Solutions</div>
+              <div class="eco-brand-name">Nextdaysite</div>
+              <div class="eco-brand-desc">High-speed turnkey business website and digital presence creation.</div>
+              <div class="eco-brand-status">Figma Node: 72:3770</div>
+            </div>
+            <div class="ecosystem-card">
+              <div class="eco-brand-badge">Catering & Food</div>
+              <div class="eco-brand-name">Chops</div>
+              <div class="eco-brand-desc">Nigerian finger-foods, gourmet snacks, and catering marketplace.</div>
+              <div class="eco-brand-status">Figma Node: 370:931</div>
+            </div>
+          </div>
+
+          <div class="ecosystem-note-banner">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cn-green-600); flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
+            <div>
+              <strong>Asset Note:</strong> Connect Nigeria's master wordmark and favicon are loaded directly from the project bundle. To export the additional sub-brand logos directly from Figma Dev Mode, add the project folder to allowed directories in Figma (MCP panel &gt; Allowed directories) or drop them into the repository.
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Usage Guidelines (Do's & Don'ts) -->
+        <div class="brand-rules-grid">
+          <div class="rule-card rule-do">
+            <div class="rule-header">
+              <span class="rule-icon">✓</span>
+              <span class="rule-title">Do: Maintain Contrast</span>
+            </div>
+            <p class="rule-text">Place the logo over clean white, light gray (<code>#F7F7F7</code>), or deep slate backgrounds (<code>#0F172A</code>) to ensure maximum readability.</p>
+          </div>
+          <div class="rule-card rule-do">
+            <div class="rule-header">
+              <span class="rule-icon">✓</span>
+              <span class="rule-title">Do: Preserve Proportions</span>
+            </div>
+            <p class="rule-text">Always scale the wordmark and favicon proportionally. Never adjust horizontal or vertical scale independently.</p>
+          </div>
+          <div class="rule-card rule-dont">
+            <div class="rule-header">
+              <span class="rule-icon">✕</span>
+              <span class="rule-title">Don't: Alter Brand Colors</span>
+            </div>
+            <p class="rule-text">Do not recolor the green letters, orange dot, or dark text. Brand recognition relies on exact chromatic consistency.</p>
+          </div>
+          <div class="rule-card rule-dont">
+            <div class="rule-header">
+              <span class="rule-icon">✕</span>
+              <span class="rule-title">Don't: Crowd Clearspace</span>
+            </div>
+            <p class="rule-text">Do not place buttons, text, or conflicting graphics within the 16px clearspace perimeter around the logo boundary.</p>
           </div>
         </div>
       </section>

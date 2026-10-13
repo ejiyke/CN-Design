@@ -172,7 +172,6 @@ function initCommandPalette() {
 
   const navItems = [
     { title: 'Overview & Philosophy', href: '#overview', cat: 'Introduction' },
-    { title: 'Logos & Favicons (Official Assets)', href: '#brand-identity', cat: 'Foundations' },
     { title: 'CN Green (Primary Brand Palette)', href: '#colors-green', cat: 'Foundations' },
     { title: 'CN Yellow / Amber Palette', href: '#colors-amber', cat: 'Foundations' },
     { title: 'CN Blue / Slate Palette', href: '#colors-slate', cat: 'Foundations' },
@@ -183,6 +182,7 @@ function initCommandPalette() {
     { title: 'Spacing & 4px Baseline', href: '#spacing', cat: 'Foundations' },
     { title: 'Responsive Grids (1440/1280/768/390)', href: '#grid', cat: 'Foundations' },
     { title: 'System Iconography (1,170+ Lib)', href: '#icons', cat: 'Foundations' },
+    { title: 'Logos & Favicons (Official Assets)', href: '#brand-identity', cat: 'Foundations' },
     { title: 'Button Component Matrix', href: '#buttons', cat: 'Components' },
     { title: 'Status Badges & Chips', href: '#badges', cat: 'Components' },
     { title: 'Form Controls & Inputs', href: '#forms', cat: 'Components' },

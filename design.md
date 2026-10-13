@@ -20,47 +20,7 @@ The **CN Design System** is an enterprise-grade marketplace and business directo
 
 ---
 
-## 2. Brand Identity: Logos & Favicons (Figma Frame `72:3759`)
-
-### 2.1 Primary Brand Wordmark
-- **Master Asset:** `logo.png`
-- **Figma Node:** `72:3762` (`image 17`)
-- **Native Dimensions:** `300 × 86 px` (Aspect ratio: `3.49:1`)
-- **Color Composition:**
-  - `CN Green` (`#93C700` / `#008753`) for lowercase wordmark letterforms (`c`, `n`, `n`, `e`, `c`, `t`)
-  - `CN Orange / Amber` (`#E49146` / `#FF7A00`) for the inner disc of the leading `c`
-  - `CN Blue / Dark Slate` (`#0F172A`) for the secondary sub-descriptor `NIGERIA.com`
-- **Clearspace Rule:** Minimum `16px` on all boundaries (calibrated to the height of the inner orange disc).
-- **Minimum Sizing:** `120px` width on desktop navigation headers; `96px` width on mobile viewports.
-
-### 2.2 Official Favicon & App Icon
-- **Master Asset:** `favicon.png`
-- **Figma Node:** `72:3761` (`image 16`)
-- **Native Dimensions:** `81 × 81 px` square vector/raster symbol.
-- **Key Visual:** Vibrant CN Green outer concentric 'C' ring enclosing an energetic orange central core disc.
-- **Resolution Matrix:**
-  - `16 × 16 px`: Standard desktop browser tab favicon
-  - `32 × 32 px`: High-DPI / Retina desktop browser tab
-  - `48 × 48 px`: Windows taskbar & bookmark bar
-  - `180 × 180 px`: Apple Touch Icon (`<link rel="apple-touch-icon">`)
-  - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
-
-### 2.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759`)
-| Brand / Sub-Domain | Figma Node | Domain Purpose | Status in Portal |
-| :--- | :--- | :--- | :--- |
-| **ConnectNigeria.com** | `72:3762` | Core Business Directory & Marketplace | Active Wordmark |
-| **Connect Nigeria Favicon** | `72:3761` | Browser Tab & App Icon Symbol | Active Favicon |
-| **ads.ng** | `72:3763` | Digital Advertising & Classified Promotion | Documented Ecosystem Brand |
-| **talent.ng** | `72:3764` | Verified Talent & Freelance Marketplace | Documented Ecosystem Brand |
-| **Connect CRM** | `72:3766` | Merchant Lead & Client Relationship Management | Documented Ecosystem Brand |
-| **Omume** | `72:3767` | Social Experience & Event Ticketing | Documented Ecosystem Brand |
-| **MyConnects.com** | `72:3768` | B2B Business Networking & Connectors | Documented Ecosystem Brand |
-| **Nextdaysite** | `72:3770` | Fast Turnaround Digital Web Services | Documented Ecosystem Brand |
-| **Chops** | `370:931` | Finger-Food & Gourmet Catering Marketplace | Documented Ecosystem Brand |
-
----
-
-## 3. Color Palette & Design Tokens
+## 2. Color Palette & Design Tokens
 
 ### 2.1 CN Green (Primary Brand Palette)
 The core brand signature used for primary CTAs, active states, confirmation badges, and focus rings.
@@ -270,7 +230,47 @@ The CN Design System icon library comprises **1,170+ standardized vector outline
 
 ---
 
-## 8. Component Specifications
+## 8. Brand Identity: Logos & Favicons (Figma Frame `72:3759`)
+
+### 8.1 Primary Brand Wordmark
+- **Master Asset:** `logo.png`
+- **Figma Node:** `72:3762` (`image 17`)
+- **Native Dimensions:** `300 × 86 px` (Aspect ratio: `3.49:1`)
+- **Color Composition:**
+  - `CN Green` (`#93C700` / `#008753`) for lowercase wordmark letterforms (`c`, `n`, `n`, `e`, `c`, `t`)
+  - `CN Orange / Amber` (`#E49146` / `#FF7A00`) for the inner disc of the leading `c`
+  - `CN Blue / Dark Slate` (`#0F172A`) for the secondary sub-descriptor `NIGERIA.com`
+- **Clearspace Rule:** Minimum `16px` on all boundaries (calibrated to the height of the inner orange disc).
+- **Minimum Sizing:** `120px` width on desktop navigation headers; `96px` width on mobile viewports.
+
+### 8.2 Official Favicon & App Icon
+- **Master Asset:** `favicon.png`
+- **Figma Node:** `72:3761` (`image 16`)
+- **Native Dimensions:** `81 × 81 px` square vector/raster symbol.
+- **Key Visual:** Vibrant CN Green outer concentric 'C' ring enclosing an energetic orange central core disc.
+- **Resolution Matrix:**
+  - `16 × 16 px`: Standard desktop browser tab favicon
+  - `32 × 32 px`: High-DPI / Retina desktop browser tab
+  - `48 × 48 px`: Windows taskbar & bookmark bar
+  - `180 × 180 px`: Apple Touch Icon (`<link rel="apple-touch-icon">`)
+  - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
+
+### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759`)
+| Brand / Sub-Domain | Figma Node | Domain Purpose | Status in Portal |
+| :--- | :--- | :--- | :--- |
+| **ConnectNigeria.com** | `72:3762` | Core Business Directory & Marketplace | Active Wordmark |
+| **Connect Nigeria Favicon** | `72:3761` | Browser Tab & App Icon Symbol | Active Favicon |
+| **ads.ng** | `72:3763` | Digital Advertising & Classified Promotion | Documented Ecosystem Brand |
+| **talent.ng** | `72:3764` | Verified Talent & Freelance Marketplace | Documented Ecosystem Brand |
+| **Connect CRM** | `72:3766` | Merchant Lead & Client Relationship Management | Documented Ecosystem Brand |
+| **Omume** | `72:3767` | Social Experience & Event Ticketing | Documented Ecosystem Brand |
+| **MyConnects.com** | `72:3768` | B2B Business Networking & Connectors | Documented Ecosystem Brand |
+| **Nextdaysite** | `72:3770` | Fast Turnaround Digital Web Services | Documented Ecosystem Brand |
+| **Chops** | `370:931` | Finger-Food & Gourmet Catering Marketplace | Documented Ecosystem Brand |
+
+---
+
+## 9. Component Specifications
 
 ### 7.1 Buttons
 Buttons are available in 6 hierarchy styles and 3 standard sizes with full state variations (`Default`, `Hover`, `Active`, `Focus`, `Disabled`).
