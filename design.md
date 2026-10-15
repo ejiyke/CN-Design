@@ -265,7 +265,7 @@ All 9 ecosystem brand logos and available favicons have been directly extracted 
 | **Chops** | `370:931` / `422:21142` | `assets/brands/chops-logo.png` (`283×104`) | `assets/brands/chops-favicon.png` (`111×115`) | **Logo & Favicon Active** |
 | **Ads.ng** | `422:21162` | `assets/brands/ads-ng-logo.png` (`163×65`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **Talent.ng** | `422:21161` | `assets/brands/talent-ng-logo.png` (`180×137`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
-| **Connect CRM** | `422:21160` | `assets/brands/connect-crm-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
+| **Connect CRM** | `422:21160` / `433:898` | `assets/brands/connect-crm-logo.png` (`267×148`) | `assets/brands/connect-crm-favicon.png` (`256×256`) | **Logo & Favicon Active** |
 | **Omume** | `422:21159` | `assets/brands/omume-logo.png` (`267×148`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **Next Day Site** | `422:21156` | `assets/brands/nextdaysite-logo.png` (`751×198`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **CN Squad** | `424:21165` | `assets/brands/cn-squad-logo.png` (`231×90`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
