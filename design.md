@@ -256,7 +256,7 @@ The CN Design System icon library comprises **1,170+ standardized vector outline
   - `192 × 192 px` / `512 × 512 px`: Progressive Web App (PWA) manifest icon
 
 ### 8.3 Ecosystem Brand Hierarchy (Figma Frame `72:3759: Logos` & Node `424:21165`)
-All 9 ecosystem brand logos and available favicons have been directly extracted via Figma MCP and stored in `assets/brands/`. Brands without a standalone favicon in Figma are explicitly designated with an empty favicon slot.
+All 11 ecosystem brand logos and available favicons have been directly extracted via Figma MCP and stored in `assets/brands/`. Brands without a standalone favicon in Figma are explicitly designated with an empty favicon slot.
 
 | Brand / Sub-Domain | Figma Node(s) | Logo Asset | Favicon Asset | Status in Portal |
 | :--- | :--- | :--- | :--- | :--- |
@@ -269,6 +269,8 @@ All 9 ecosystem brand logos and available favicons have been directly extracted 
 | **Omume** | `422:21159` / `434:899` | `assets/brands/omume-logo.png` (`267×148`) | `assets/brands/omume-favicon.png` (`256×256`) | **Logo & Favicon Active** |
 | **Next Day Site** | `422:21156` | `assets/brands/nextdaysite-logo.png` (`751×198`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 | **CN Squad** | `424:21165` | `assets/brands/cn-squad-logo.png` (`231×90`) | `assets/brands/cn-squad-favicon.png` (`231×90`) | **Logo & Favicon Active** |
+| **Club Connect** | `435:901` | `assets/brands/club-connect-logo.png` (`256×256`) | `assets/brands/club-connect-favicon.png` (`256×256`) | **Logo & Favicon Active** |
+| **Quote Request** | `435:900` | `assets/brands/quote-request-logo.png` (`256×256`) | *None (Empty Slot)* | **Logo Active (No Favicon)** |
 
 ---
 
